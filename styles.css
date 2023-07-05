@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  display: flex; 
+  display: flex;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   margin-left: 0;
@@ -40,22 +40,22 @@ header a {
 }
 
 .logo {
-  width: Hug (6.25rem);
-  height: Hug (2.5rem);
+  width: hug (6.25rem);
+  height: hug (2.5rem);
   top: 0.25rem;
   left: 0.75rem;
   padding: 0.625rem 0.75rem;
-  
 }
 
 .menu-bars {
-  width: Hug (2.5rem);
-  height: Hug (2.5rem);
+  width: hug (2.5rem);
+  height: hug (2.5rem);
   top: 0.25rem;
   left: 19.4375rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
+
 #top {
   background-image: url("images/header-shapes\ mobile.png");
   background-repeat: no-repeat;
