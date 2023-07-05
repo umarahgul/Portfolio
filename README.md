@@ -42,11 +42,13 @@
 </details
 <!-- Features -->
 ### Key Features <a name="key-features"></a>
-- Responsive design that adapts to different screen sizes and devices.
-- Clean and modern layout to highlight the developer's work.
-- Easy navigation between different sections of the portfolio.
-- Contact form for users to get in touch with the developer.
-- Professional branding and styling.
+<ul>
+<li> Responsive design that adapts to different screen sizes and devices.</li>
+<li> Clean and modern layout to highlight the developer's work.</li>
+<li> Easy navigation between different sections of the portfolio.</li>
+<li> Contact form for users to get in touch with the developer.</li>
+<li> Professional branding and styling.</li>
+</ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
