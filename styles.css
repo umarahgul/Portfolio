@@ -20,12 +20,7 @@ header {
   margin-bottom: 1.25rem;
   margin-left: 0;
   width: 23.4375rem;
-  height: 5.75rem;
-}
-
-div {
-  height: 2.75rem;
-  width: 23.4375rem;
+  height: 4.5rem;
 }
 
 nav {
@@ -50,6 +45,7 @@ header a {
   top: 0.25rem;
   left: 0.75rem;
   padding: 0.625rem 0.75rem;
+  margin-left: 1rem;
 }
 
 .menu-bars {
@@ -59,7 +55,7 @@ header a {
   left: 19.4375rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  margin-right: 1.25px;
+  margin-right: 1.25rem;
 }
 
 #top {
