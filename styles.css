@@ -71,27 +71,27 @@ header a {
 }
 
 h1 {
-  height: 150px;
-  width: 327px;
-  left: 24px;
-  top: 114px;
+  height: 9.375rem;
+  width: 20.4375rem;
+  left: 1.5rem;
+  top: 7.125rem;
   font-family: 'Poppins', sans-serif;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 52px;
+  line-height: 3.25rem;
   letter-spacing: 0;
   text-align: left;
 }
 
 .pg1 {
-  height: 146px;
-  width: 327px;
-  left: 24px;
-  top: 276px;
+  height: 9.125rem;
+  width: 20.4375rem;
+  left: 1.5rem;
+  top: 17.25rem;
   font-family: Poppins, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem;
   letter-spacing: 0;
   text-align: left;
 }
@@ -125,6 +125,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: left;
+  margin-top: 1rem;
   padding: 16px;
   gap: 12px;
   width: 327px;
@@ -324,7 +325,7 @@ li {
   color: black;
   display: flex;
   justify-content: space-between;
-  width: 237px;
+  width: 303px;
   margin-right: 102px;
 }
 
@@ -335,9 +336,10 @@ li {
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: relative;
   background-color: #fff;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  width:303px;
   /* z-index: 1; */
 }
 
@@ -384,7 +386,7 @@ a {
   line-height: 80%;
   vertical-align: left;
   margin-bottom: 36px;
-  gap: 102px;
+  gap: 5px;
   margin-right: 102px;
 }
 
@@ -398,8 +400,28 @@ a {
   margin-bottom: 23px;
 }
 
-.list-item {
-float: right;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 303px;
+}
+
+
+li .list-item {
+display:flex;
+flex-direction: row;
+justify-content: space-around;
+padding: 5px;
+line-height:0%;
+margin-bottom: 0%;
+align-items: center;
+}
+
+.dropdown-content .bg-drp li{
+margin-bottom:0.25rem;
+line-height:0.5rem;
+
 }
 
 @media screen and (min-width: 375px) {
