@@ -202,7 +202,7 @@ h1 {
 .About-myself {
   background-color: #fff;
   align-items: left;
-  padding-left:15px;
+  padding-left: 15px;
   margin: 30px 24px;
   display: flex;
   flex-direction: column;
@@ -424,7 +424,7 @@ li {
 li .list-item {
   display: flex;
   flex-direction: row;
-  gap:5px;
+  gap: 5px;
   padding: 5px;
   line-height: 0%;
   margin-bottom: 0%;
@@ -436,6 +436,7 @@ li .list-item {
   margin-bottom: 0.25rem;
   line-height: 0.5rem;
 }
+
 li .list-item #prg-lang {
   font-weight: 500;
   margin-left: 10px;
