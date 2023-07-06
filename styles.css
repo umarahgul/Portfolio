@@ -16,7 +16,7 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  margin-top: 1.25rem;
+  margin-top: 0.5rem;
   margin-bottom: 1.25rem;
   margin-left: 0;
   width: 23.4375rem;
