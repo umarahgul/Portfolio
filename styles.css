@@ -339,7 +339,7 @@ li {
   position: relative;
   background-color: #fff;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  width:303px;
+  width: 303px;
 }
 
 a {
@@ -350,9 +350,9 @@ a {
   color: black;
   text-decoration: none;
   display: block;
-  width:303px;
-  height:66.72px;
-  border-radius:10px;
+  width: 303px;
+  height: 66.72px;
+  border-radius: 10px;
   background-color: #f9f9f9;
 }
 
@@ -406,18 +406,18 @@ a {
 }
 
 li .list-item {
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-padding: 5px;
-line-height: 0%;
-margin-bottom: 0%;
-align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5px;
+  line-height: 0%;
+  margin-bottom: 0%;
+  align-items: center;
 }
 
 .dropdown-content .bg-drp li {
-margin-bottom: 0.25rem;
-line-height: 0.5rem;
+  margin-bottom: 0.25rem;
+  line-height: 0.5rem;
 }
 
 @media screen and (min-width: 375px) {
