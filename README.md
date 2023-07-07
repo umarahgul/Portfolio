@@ -1,9 +1,9 @@
 
-         Microverse Portfolio project
+          Portfolio project
 
 <a name="readme-top"></a>
 <div align="center">
-  <h3><b>Portfolio Microverse</b></h3>
+  <h3><b>Portfolio </b></h3>
 </div>
 <!-- TABLE OF CONTENTS -->
 # 📗 Table of Contents
@@ -26,7 +26,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 PortfolioMicroverse <a name="about-project"></a>
+# 📖 Portfolio <a name="about-project"></a>
 
 "PortfoilioMicroverse" is a simple web application that uses HTML, CSS, Figma and linters to showcase the skills and work of a web developer. It includes a collection of projects, an about section, contact information, and other relevant details. The project is implemented using Figma, a powerful design and prototyping too 
 
@@ -77,7 +77,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:umarahgul/PortfolioMicroverse.git
+  git clone git@github.com:umarahgul/Portfolio.git
 ```
 
 ### Install
