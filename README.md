@@ -103,8 +103,8 @@ LinkedIn: [umarahgul](https://www.linkedein.com/umarahgul)
 
 👤 **GermanDanielVillalba**
 
-GitHub: [@umarahgul](https://github.com/umarahgul)
-LinkedIn: [umarahgul](https://www.linkedein.com/umarahgul)
+GitHub: [@gdvl777](https://github.com/gdvl777)
+LinkedIn: [Daniel Villalba](https://www.linkedin.com/in/daniel-villalba)
 
 
 
