@@ -28,7 +28,7 @@
 
 # 📖 Portfolio <a name="about-project"></a>
 
-"PortfoilioMicroverse" is a simple web application that uses HTML, CSS, Figma and linters to showcase the skills and work of a web developer. It includes a collection of projects, an about section, contact information, and other relevant details. The project is implemented using Figma, a powerful design and prototyping too 
+"Portfoilio" is a simple web application that uses HTML, CSS, Figma and linters to showcase the skills and work of a web developer. It includes a collection of projects, an about section, contact information, and other relevant details.It contains a form as well, that uses 'formspree' for submission. The project is implemented using Figma, a powerful design and prototyping too 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -101,6 +101,13 @@ Install linters for this project with:
 GitHub: [@umarahgul](https://github.com/umarahgul)
 LinkedIn: [umarahgul](https://www.linkedein.com/umarahgul)
 
+👤 **GermanDanielVillalba**
+
+GitHub: [@umarahgul](https://github.com/umarahgul)
+LinkedIn: [umarahgul](https://www.linkedein.com/umarahgul)
+
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -115,7 +122,7 @@ LinkedIn: [umarahgul](https://www.linkedein.com/umarahgul)
 ## 🤝 Contributing <a name="contributing"></a>
 Contributions, issues, and feature requests are welcome!
 Feel free to check the issues page.
-If you wish to contribute to the PortfoilioMicroverse project, you can follow these steps:
+If you wish to contribute to the 'Portfoilio' project, you can follow these steps:
 Fork the repository to your GitHub account.
 Create a new branch for your feature or bug fix.
 Make your changes and commit them with descriptive commit messages.

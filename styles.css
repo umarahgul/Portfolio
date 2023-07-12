@@ -216,6 +216,7 @@ h1 {
   flex-direction: column;
   width: 350px;
   border-top-right-radius: 50px;
+  margin-bottom:0;
 }
 
 #myself {
@@ -452,246 +453,120 @@ li .list-item #prg-lang {
   font-size: 15px;
 }
 
+.contact-me {
+  background-image: url("images/image-for-contact\ me.png");
+  width: 360px;
+  height: 779px;
+  top: 5410px;
+  display:flex;
+  flex-direction: column;
+  margin-top:0;
+
+}
+.form-header {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 130px;
+  margin-bottom:30px;
+
+}
+
+ .form-heading {
+  color:#fff;
+  width: 801px;
+  height: 56px;
+  top: 4734px;
+  margin-top:60px;
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.pg-contact {
+  width: 327px;
+  height: 137px;
+  top: 4802px;
+  left: 24px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: center;
+  color:#fff;
+  /* margin-bottom:25px; */
+}
+.form-info {
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+
+input,label,textarea {
+  width: 327px;
+  height: 48px;
+  border-radius: 5px;
+  border: 1px;
+  margin-left:20px;
+  color:black;
+  padding: 5px;
+
+}
+label {color:#fff;}
+textarea {
+  resize:none;
+  width: 327px;
+  height: 145px;
+  border-radius: 8px;
+  border: 1px;
+  color:gray;
+
+}
+.button-form {
+  width: 142px;
+  height: 48px;
+  top: 5317px;
+  left: 24px;
+  padding: 12px 16px 12px 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  color:#6070ff;
+  border:none;
+  margin-left:20px;
+  margin-top:15px;
+
+
+font-family: Poppins;
+font-size: 17px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.03em;
+text-align: center;
+
+  
+
+}
+
+.end {
+  width: 134px;
+  height: 5px;
+  top: 21px;
+  left: 120px;
+  text-align: center;
+  background-color: #0D151E;
+  margin-top:20px;
+  margin-left:120px;
+}
+
 @media screen and (min-width: 375px) {
   .works-section {
     grid-template-columns: repeat(1, 1fr);
    
   }
 
-  @media screen and (min-width: 1024px ) {
-    #top {
-      background-color: #fff;
-      background-image: url("images/Header\ bg.svg");
-      background-repeat: no-repeat;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 0.75rem;
-      margin-bottom: 50px;
-      z-index: 1;
-      width: 1440px;
-      height: 900px;
-      top: 71px;
-      padding: 289px 260px ;
-      border-bottom-left-radius: 100px;
-
-    }
-    .menu-bars img {
-      display: none ;
-    }
-    header {
-      background-color: #fff;
-      width: 1440px;
-    }
-    #desktop-menu{
-      display:flex;
-      justify-content:right;
-      flex-direction: row;
-      gap:15px;
-      margin-left: 1000px;
-      margin-top: 10px;
-      width: Hug (258px);
-      height: Hug (40px);
-      margin-top: 16px;
-      left: 1039px;
-      color:#344563;
-      align:center;
-      font-weight:500px;
-      font-size:15px;
-
-    
-    }
-   
-    header a {
-      color:#344563;
-      align:center;
-      font-weight:500;
-      font-size:15px;
-      font-family: "Poppins";
-      line-height: 20px;
-      text-align: center;
-
-    }
-  
-    h1 {
-       font-size: 48px;
-       font-weight: 700;
-       line-height: 60px;
-      width: 420px;
-      height: 122px;
-    }
-    .pg1 {
-      font-size:20px;
-      width: 920px;
-      height: 98px;
-      font-style: "Poppins";
-      
-    }
-   h1,
-   .connect,
-   .pg1,
-   .footer {
-    margin-left:-20px;
-   }
-    #inverse {
-     display:flex; 
-     flex-direction: row-reverse;
-   } 
-   .works {
-    width: 1156px;
-    height: 496px;
-    margin-top:100px; 
-    background-color: #fff;
-    margin-bottom: 50px;
-    border-radius: 50px;
-    display: inline-block;
-     display:flex; 
-     flex-direction: row; 
-     gap:20px; 
-   }
-  
-   .left {
-    float:left;
-   }
-   
-   
-  .info {
-     /* width: Hug (544px);  */
-     width:100%; 
-     /* height: Hug (445px);  */
-     height:auto; 
-    top: 24px;
-    left: 590px;
-    padding: 24px;
-    gap: 24px;
-    /* border:solid red; */
-
-  }
-   /* .snapshot { */
-    /* display:none; */
-   /* } */
-    /* .snapshot-desktop {   
-    width: 544px;
-    height: 448px;
-    top: 24px;
-    left: 24px;
-    border-radius: 8px;
-    border: solid red;
-
-      }   */
-   .snapshot {display: none;}
-   .snapshot-desktop {
-    display: inline-block;
-    width: 544px;
-    height: 448px;
-    top: 24px;
-    left: 24px;
-    border-radius: 8px;
-   }   
-   
-
-   .tags {
-    width: Hug (297px);
-    height: Hug (40px);
-    gap: 12px;
-    margin-top:20px;
-    margin-bottom: 20px;
-
-
-   }
-   .tags-li {
-    font-family: Poppins;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-
-   }
-   .tags-li-blod {
-    font-family: Poppins;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-
-   }
-   .pg2 {
-    width: 496px;
-    height: 50px;
-    margin-top:20px;
-    margin-bottom:20px;
-   }
-   .stack {
-    margin-bottom:40px; 
-   }
-   .About-myself {
-    width: 1440px;
-    height: 924px;
-    top: 4535px;
-    left: 1440px;
-    display:flex;
-    flex-direction: row;
-    gap:20px;
-    /* angle: -180 deg; */
-    
-   }
-     .About-myself .left .connect { 
-       margin-left:8px;
-     
-       width:fit-content;
-    } 
-    .About-myself .left .footer {
-      margin-left:8px;
-      width:fit-content;
-    }
-  .left {
-    width: Hug (447px);
-    height: Hug (311px);
-    top: 3777px;
-    left: 143px;
-    gap: 24px;
-    display:flex;
-    flex-direction: column;
-    margin-top:20px;
-    margin-left:20px; 
-  }   
-  .right {
-
-    width: Hug (684px);
-    height: Hug (360px);
-    top: 3753px;
-    left: 614px;
-    margin-top:110px;
-    margin-left: 20px;
-
-  }
-   
-.bg-drp {
-  display:flex;
-}
-
- .bg-drp .list-item {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    flex: 1 0 20%;
-    margin: 5px;
-    width: 122px;
-    height: 120px;
-    padding: 12px 12px 20px 12px;
-    border-radius: 8px;
-
-
-  }
-
-  li .list-item {
-    display:flex;
-    flex-direction: column;
-    gap: 20px;
-
-
-  }
-}
+ 
 }

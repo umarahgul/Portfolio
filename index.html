@@ -188,25 +188,35 @@
           </ul>
         </div>
     </section>
-    <form action="https://formspree.io/f/mvojovab" method="post" class="contact-me">
-
+    <section class="contact-me">
+    
+        <div class="form-header">
         <h2 class="form-heading"> Contact me </h2>
  
         <p class="pg-contact">If you have an application you are interested in developing, a feature that you
           need built or a project that needs coding. 
          I’d love to help with it!
          </p>
-         <label for="name" value="name">Name:</label>
-             <input type="text" id="name" value="name" required placeholder="enter your name" maxlength="30">
- 
-             <label for="e-mail" value="e-mail">E-mail:</label>
-                 <input type="email" id="e-mail" value="name" required placeholder="enter your email">
- 
-                 <label for="message" value="message" >Comments</label><br>
-                 <textarea id="message" maxlength="500">Enter Your comments here...</textarea>
-                 <input type="submit" value="Get in Touch">
+         </div>
+         <form action="https://formspree.io/f/mqkvkgdo" method="POST" class="contact-me-form">
+         <ul class="form-info">
+         <li>     
+            <!-- <label for="name" value="name">Name:</label> -->
+             <input type="text" id="name" value="Lorem Ipsum" name="name" required placeholder="enter your name" maxlength="30"/></li>
+         <li>
+             <!-- <label for="e-mail" value="e-mail">E-mail:</label> -->
+                 <input type="email" id="e-mail" value="loremipsum@gmail.com" name="email" required placeholder="enter your email"/> </li>
+          <li>
+                 <!-- <label for="message" value="message" >Message</label><br> -->
+                 <textarea id="message" maxlength="500" name="message"  >Enter Your message here...</textarea> </li>
+        <li>
+            <button class="button-form" type="submit">
+                Get in touch
+              </button> </li>
+                 </ul>
          </form>
- 
+         <div class="end"></div>
+ </section>
    
 
 </body>
