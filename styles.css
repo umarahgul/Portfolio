@@ -458,73 +458,74 @@ li .list-item #prg-lang {
   width: 360px;
   height: 779px;
   top: 5410px;
-  display:flex;
+  display: flex;
   flex-direction: column;
-  margin-top:0;
-
+  margin-top: 0;
 }
+
 .form-header {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 130px;
-  margin-bottom:30px;
-
+  margin-bottom: 30px;
 }
 
- .form-heading {
+.form-heading {
   color:#fff;
   width: 801px;
   height: 56px;
   top: 4734px;
-  margin-top:60px;
-  font-family: Poppins;
+  margin-top: 60px;
+  font-family: "Poppins";
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
 }
+
 .pg-contact {
   width: 327px;
   height: 137px;
   top: 4802px;
   left: 24px;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0;
   text-align: center;
-  color:#fff;
-  /* margin-bottom:25px; */
-}
-.form-info {
-  display:flex;
-  flex-direction: column;
-  gap:10px;
+  color: #fff;
 }
 
+.form-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 input,label,textarea {
   width: 327px;
   height: 48px;
   border-radius: 5px;
   border: 1px;
-  margin-left:20px;
-  color:black;
+  margin-left: 20px;
+  color: black;
   padding: 5px;
-
 }
-label {color:#fff;}
+
+label {
+  color:#fff;
+}
+
 textarea {
-  resize:none;
+  resize: none;
   width: 327px;
   height: 145px;
   border-radius: 8px;
   border: 1px;
   color:gray;
-
 }
 .button-form {
   width: 142px;
@@ -535,20 +536,15 @@ textarea {
   border-radius: 8px;
   background-color: #fff;
   color:#6070ff;
-  border:none;
-  margin-left:20px;
-  margin-top:15px;
-
-
-font-family: Poppins;
-font-size: 17px;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: 0.03em;
-text-align: center;
-
-  
-
+  border: none;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-family: "Poppins";
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .end {
@@ -557,16 +553,14 @@ text-align: center;
   top: 21px;
   left: 120px;
   text-align: center;
-  background-color: #0D151E;
-  margin-top:20px;
-  margin-left:120px;
+  background-color: #0d151e;
+  margin-top: 20px;
+  margin-left: 120px;
 }
 
 @media screen and (min-width: 375px) {
   .works-section {
     grid-template-columns: repeat(1, 1fr);
-   
-  }
 
- 
+}
 }
