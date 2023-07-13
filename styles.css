@@ -155,7 +155,7 @@ h1 {
   height: 552px;
   background: #fff;
   border: 1px solid #dfe1e6;
-  border-radius: 16px;
+  border-radius: 8px;
   margin-bottom: 50px;
 }
 
@@ -315,6 +315,24 @@ h1 {
   line-height: 16px;
   color: #344563;
   list-style: none;
+}
+.work-tags1 .tags-li-blod .second {
+  display:none;
+}
+
+.work-tags1 .tags-li .second {
+  display:none;
+}
+
+.work-tags1 .pg2 .second {
+  display:none;
+}
+
+.desktop-display {
+  display: none;
+}
+.mobile-display {
+  display: contents;
 }
 
 .see-project {
@@ -572,6 +590,8 @@ textarea {
   margin-left: 120px;
 }
 
+
+
 @media screen and (min-width: 375px) {
   .works-section {
     grid-template-columns: repeat(1, 1fr);
@@ -616,8 +636,6 @@ textarea {
       align:center;
       font-weight:500px;
       font-size:15px;
-
-    
     }
    
     header a {
@@ -628,75 +646,63 @@ textarea {
       font-family: "Poppins";
       line-height: 20px;
       text-align: center;
-
     }
   
     h1 {
-       font-size: 48px;
-       font-weight: 700;
-       line-height: 60px;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 60px;
       width: 420px;
       height: 122px;
     }
+
     .pg1 {
       font-size:20px;
       width: 920px;
       height: 98px;
-      font-style: "Poppins";
-      
+      font-style: "Poppins";  
     }
-   h1,
-   .connect,
-   .pg1,
-   .footer {
-    margin-left:-20px;
-   }
+
+    h1,
+    .connect,
+    .pg1,
+    .footer {
+      margin-left:-20px;
+    }
+
     #inverse {
-     display:flex; 
-     flex-direction: row-reverse;
+      display:flex; 
+      flex-direction: row-reverse;
    } 
    .works {
-    width: 1156px;
-    height: 496px;
-    margin-top:100px; 
-    background-color: #fff;
-    margin-bottom: 50px;
-    border-radius: 50px;
-    display: inline-block;
-     display:flex; 
-     flex-direction: row; 
-     gap:20px; 
+      width: 1156px;
+      height: 496px;
+      margin-top:100px; 
+      background-color: #fff;
+      margin-bottom: 50px;
+      border-radius: 8px;
+      display: inline-block;
+      display:flex; 
+      flex-direction: row; 
+      gap:20px; 
    }
   
    .left {
-    float:left;
+      float:left;
    }
    
-   
   .info {
-     /* width: Hug (544px);  */
      width:100%; 
-     /* height: Hug (445px);  */
      height:auto; 
-    top: 24px;
-    left: 590px;
-    padding: 24px;
-    gap: 24px;
-    /* border:solid red; */
+     top: 24px;
+     left: 590px;
+     padding: 24px;
+     gap: 24px;
   }
-   /* .snapshot { */
-    /* display:none; */
-   /* } */
-    /* .snapshot-desktop {   
-    width: 544px;
-    height: 448px;
-    top: 24px;
-    left: 24px;
-    border-radius: 8px;
-    border: solid red;
-
-      }   */
-   .snapshot {display: none;}
+  
+   .snapshot {
+    display: none;
+  }
    .snapshot-desktop {
     display: inline-block;
     width: 544px;
@@ -704,7 +710,7 @@ textarea {
     top: 24px;
     left: 24px;
     border-radius: 8px;
-   }   
+  }   
    
    .tags {
     width: Hug (297px);
@@ -712,7 +718,7 @@ textarea {
     gap: 12px;
     margin-top:20px;
     margin-bottom: 20px;
-   }
+  }
 
    .tags-li {
     font-family: Poppins;
@@ -722,25 +728,29 @@ textarea {
     letter-spacing: 0em;
     text-align: left;
    }
-
+   
    .tags-li-blod {
     font-family: Poppins;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
    }
-
+   
    .pg2 {
-    width: 496px;
-    height: 50px;
-    margin-top:20px;
-    margin-bottom:20px;
-   }
+    width: 303px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #344563;
 
+  }
+   
    .stack {
     margin-bottom:40px; 
+    margin-top:40px;
    }
 
    .About-myself {
@@ -825,11 +835,38 @@ textarea {
   position:relative;
   left:38%;
  }
+
  .end {
   display:none;
  }
+
  .form-info li .button-form { 
   margin-left: 100px;
  }
+ 
+ .logo {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #6070FF;
+  margin-left:120px;
+ }
+
+ #desktop-menu {
+  margin-left: 800px;
+
+ }
+   
+.desktop-display {
+  display: contents;
+}
+.mobile-display {
+  display: none;
+}
+
+
 }
 }
