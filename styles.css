@@ -597,60 +597,58 @@ textarea {
       grid-template-columns: repeat(1, 1fr);
     }
 
-    @media screen and (min-width: 1024px ) {
-       #top {
-        background-color: #fff;
-        background-image: url("images/Header\ bg.svg");
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 0.75rem;
-        margin-bottom: 50px;
-        z-index: 1;
-        width: 1440px;
-        height: 900px;
-        top: 71px;
-        padding: 289px 260px ;
-        border-bottom-left-radius: 100px;
-      }
+  @media screen and (min-width: 1024px ) {
+     #top {
+      background-color: #fff;
+      background-image: url("images/Header\ bg.svg");
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-bottom: 50px;
+      z-index: 1;
+      width: 1440px;
+      height: 900px;
+      top: 71px;
+      padding: 289px 260px ;
+      border-bottom-left-radius: 100px;
+    }
 
-      .menu-bars img {
-        display: none;
-      }
+    .menu-bars img {
+      display: none;
+    }
 
-      header {
-        background-color: #fff;
-        width: 1440px;
-      }
-
-      #desktop-menu{
-        display: flex;
-        justify-content: right;
-        flex-direction: row;
-        gap: 15px;
-        margin-left: 1000px;
-        margin-top: 10px;
-        width: hug (258px);
-        height: hug (40px);
-        margin-top: 16px;
-        left: 1039px;
-        color: #344563;
-        align: center;
-        font-weight: 500px;
-        font-size: 15px;
+    header {
+      background-color: #fff;
+      width: 1440px;
+    }
+    
+    #desktop-menu{
+      display: flex;
+      justify-content: right;
+      flex-direction: row;
+      gap: 15px;
+      margin-left: 1000px;
+      margin-top: 10px;
+      width: hug (258px);
+      height: hug (40px);
+      margin-top: 16px;
+      left: 1039px;
+      color: #344563;
+      font-weight: 500px;
+      font-size: 15px;
     }
    
     header a {
       color: #344563;
-      align: center;
       font-weight: 500;
       font-size: 15px;
-      font-family: "Poppins";
+      font-family: "Poppins", sans-serif;
       line-height: 20px;
       text-align: center;
     }
-  
+    
     h1 {
       font-size: 48px;
       font-weight: 700;
@@ -663,47 +661,47 @@ textarea {
       font-size: 20px;
       width: 920px;
       height: 98px;
-      font-style: "Poppins", "sans serif";  
+      font-style: "Poppins", "sans serif"; 
     }
-
+    
     h1,
     .connect,
     .pg1,
     .footer {
-      margin-left:-20px;
+      margin-left: -20px;
     }
 
     #inverse {
-      display:flex; 
+      display: flex;
       flex-direction: row-reverse;
     }
 
     .works {
       width: 1156px;
       height: 496px;
-      margin-top:100px; 
+      margin-top: 100px;
       background-color: #fff;
       margin-bottom: 50px;
       border-radius: 8px;
       display: inline-block;
-      display: flex; 
-      flex-direction: row; 
+      display: flex;
+      flex-direction: row;
       gap: 20px; 
     }
-  
+    
     .left {
-      float:left;
+      float: left;
     }
-   
+    
     .info {
-      width: 100%; 
-      height: auto; 
+      width: 100%;
+      height: auto;
       top: 24px;
       left: 590px;
       padding: 24px;
       gap: 24px;
     }
-  
+    
     .snapshot {
       display: none;
     }
@@ -715,8 +713,8 @@ textarea {
       top: 24px;
       left: 24px;
       border-radius: 8px;
-    }   
-   
+    }  
+    
     .tags {
       width: hug (297px);
       height: hug (40px);
@@ -726,23 +724,23 @@ textarea {
     }
 
     .tags-li {
-      font-family: "Poppins" ,sans-serif;
+      font-family: "Poppins", sans-serif;
       font-size: 18px;
       font-weight: 400;
       line-height: 24px;
       letter-spacing: 0;
       text-align: left;
     }
-   
+    
     .tags-li-blod {
-      font-family: Poppins;
+      font-family: "Poppins", sans-serif;
       font-size: 18px;
       font-weight: 500;
       line-height: 24px;
-      letter-spacing: 0em;
+      letter-spacing: 0;
       text-align: left;
     }
-   
+    
     .pg2 {
       width: 303px;
       font-family: 'Poppins', sans-serif;
@@ -751,10 +749,10 @@ textarea {
       text-align: left;
       color: #344563;
     }
-   
+    
     .stack {
-      margin-bottom:40px; 
-      margin-top:40px;
+      margin-bottom: 40px;
+      margin-top: 40px;
     }
 
     .About-myself {
@@ -764,17 +762,17 @@ textarea {
       left: 1440px;
       display: flex;
       flex-direction: row;
-      gap:20px;
+      gap: 20px;
     }
 
-    .About-myself .left .connect { 
-      margin-left:8px; 
+    .About-myself .left .connect {
+      margin-left: 8px; 
       width: fit-content;
-    } 
-
+    }
+    
     .About-myself .left .footer {
-      margin-left:8px;
-      width:fit-content;  
+      margin-left: 8px;
+      width: fit-content; 
     }
     
     .left {
@@ -788,13 +786,13 @@ textarea {
       margin-top: 20px;
       margin-left: 20px;
     }   
-
+    
     .right {
       width: hug (684px);
       height: hug (360px);
       top: 3753px;
       left: 614px;
-      margin-top:110px;
+      margin-top: 110px;
       margin-left: 20px;
     }
     
@@ -845,7 +843,7 @@ textarea {
     .form-info li .button-form {
       margin-left: 100px;
     }
-    
+
     .logo {
       font-family: "Poppins", sans-serif;
       font-size: 18px;
