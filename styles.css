@@ -629,6 +629,7 @@ textarea {
       color: #344563;
       font-weight: 500px;
       font-size: 15px;
+      margin-left: 900px;
     }
 
     header a {
@@ -842,10 +843,6 @@ textarea {
       color: #6070ff;
       position: relative;
       left: 100px;
-    }
-
-    #desktop-menu {
-      margin-left: 900px;
     }
 
     .desktop-display {
