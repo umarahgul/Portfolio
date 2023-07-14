@@ -28,7 +28,7 @@
 
 # 📖 Portfolio <a name="about-project"></a>
 
-"Portfoilio" is a simple web application that uses HTML, CSS, Figma and linters to showcase the skills and work of a web developer. It includes a collection of projects, an about section, contact information, and other relevant details.It contains a form as well, that uses 'formspree' for submission. The project is implemented using Figma, a powerful design and prototyping too 
+"Portfoilio" is a simple web application that uses HTML, CSS, Figma and linters to showcase the skills and work of a web developer. It includes a collection of projects, an about section, contact information, and other relevant details.It contains a form as well, that uses 'formspree' for submission. The project is implemented using Figma, a powerful design and prototyping tool. Besides building a mobile first version, this project has a desktop verison using RWD, which adds to UX. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
