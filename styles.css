@@ -879,7 +879,7 @@ textarea {
       justify-content: space-between;
     }
 
-    .divider {
+    #divider {
       width: 684px;
     }
   }
