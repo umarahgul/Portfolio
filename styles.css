@@ -750,12 +750,13 @@ textarea {
       left: 1440px;
       display: flex;
       flex-direction: row;
-      gap: 20px;
+      gap: 10px;
     }
 
     .About-myself .left .connect {
       margin-left: 8px;
       width: fit-content;
+      margin-top: 0;
     }
 
     .About-myself .left .footer {
@@ -765,15 +766,21 @@ textarea {
 
     .left {
       width: 447px;
-      height: 311px;
+      height: 600px;
       top: 3777px;
-      left: 143px;
       gap: 24px;
       display: flex;
       flex-direction: column;
       margin-top: 20px;
-      margin-left: 20px;
+      margin-left: 143px;
+      padding-right: 5px;
       float: left;
+    }
+
+    .left .pg2 {
+      width: 447px;
+      margin-bottom: 0;
+      height: auto;
     }
 
     .right {
