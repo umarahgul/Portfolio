@@ -56,7 +56,9 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- comming soon
+```sh
+https://www.loom.com/share/c4eed30e242e47a0a6c630c26786a76e
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
