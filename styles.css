@@ -1,3 +1,5 @@
+html { scroll-behavior: smooth; }
+
 * {
   margin: 0;
   padding: 0;
@@ -144,19 +146,17 @@ h1 {
 
 #hamburger-menu {
   background-image: url(images/Overlay.png);
-
-  /* height: 37.75rem;
-  width: 23.4375rem; */
   flex-direction: column;
   justify-content: center;
   padding: 7.125rem 1.5rem;
-  width: 375px;
+  width: 100%;
   height: 750px;
   display: none;
   position: absolute;
+  position:fixed;
   opacity: 0.8;
   top: 0;
-  padding-top: 44px;
+  padding-top: 5px; 
 }
 
 .blur {
@@ -185,11 +185,11 @@ h1 {
   margin-top: 44px;
   top: 90px;
   left: 12px;
-  gap: 8px;
+  gap: 18px;
   display: flex;
   flex-direction: column;
   color: white;
-  align-items: center;
+  align-items:flex-start;
 }
 
 li {
@@ -267,7 +267,7 @@ li {
 }
 
 .mobile-display {
-  display: contents;
+  display: block;
 }
 
 .stack {
@@ -718,10 +718,10 @@ textarea {
       margin-left: -20px;
     }
 
-    #inverse {
+    /* #inverse {
       display: flex;
       flex-direction: row-reverse;
-    }
+    } */
 
     .works {
       width: 1156px;
@@ -915,6 +915,9 @@ textarea {
 
     .mobile-display {
       display: none;
+    }
+    .hamburger-menu {
+      visibility: hidden;
     }
 
     .pg-contact {
