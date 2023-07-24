@@ -12,4 +12,3 @@ function closeNav() {
 document.querySelector(' #hamburger-menu').addEventListener('click', openNav);
 
 document.querySelector('#closebtn').addEventListener('click', closeNav);
-
