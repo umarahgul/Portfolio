@@ -48,14 +48,15 @@
     <section id="hamburger-menu" class="mobile-display">
     <img src="images/Icon.png" id="closebtn" onclick="closeNav()">
     <ul class="popmenu-list">
-        <li>Portfolio</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li onclick="closeNav()"><a href="#jump-to-works-section">Portfolio</a></li>
+        <li onclick="closeNav()"><a href="#About-page">About</a></li>
+        <li onclick="closeNav()"><a href="#jump-to-contacts">Contact</a></li>
         </ul>
     <div class="end"></div>
     </section>
     
-    <section class="work-section">
+    <section class="work-section" id="jump-to-works-section">
+        <!-- <div id="jump-to-works-section"></div> -->
         <article class="works">
              <img src="images/image-works-1-desktop.png" class="snapshot-desktop"> 
             
@@ -188,7 +189,7 @@
     </section>
 
 
-    <section class="About-myself">
+    <section class="About-myself" id="About-page">
         <div class="left">
         <h2 id="myself">About Myself</h2>
         <p class="pg2">Hello I’m a software developer! I can help you build a product ,
@@ -232,7 +233,7 @@
           </ul>
         </div>
     </section>
-    <section class="contact-me">
+    <section class="contact-me" id="jump-to-contacts">
     
         <div class="form-header">
         <h2 class="form-heading"> Contact me </h2>
