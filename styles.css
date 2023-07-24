@@ -166,6 +166,17 @@ h1 {
   opacity: 0.8;
 }
 
+.end {
+  width: 134px;
+  height: 5px;
+  top: 21px;
+  left: 120px;
+  text-align: center;
+  background-color: #0d151e;
+  margin-top: 20px;
+  margin-left: 120px;
+}
+
 #hamburger-menu > .end {
   margin-top: 470px;
 }
@@ -183,13 +194,28 @@ h1 {
   align-items: center;
 }
 
+li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
 .popmenu-list > li {
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 32px;
   font-weight: 600;
   line-height: 44px;
   letter-spacing: 0;
   text-align: left;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  width: 303px;
+  height: 66.72px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
 }
 
 .popmenu-list > li a {
@@ -416,11 +442,6 @@ h1 {
   background: #2230d2;
 }
 
-li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
 .dropdown-btn {
   color: black;
   display: flex;
@@ -438,16 +459,6 @@ li {
   display: none;
   position: relative;
   width: 303px;
-}
-
-.dropdown-content a {
-  color: black;
-  text-decoration: none;
-  display: block;
-  width: 303px;
-  height: 66.72px;
-  border-radius: 10px;
-  background-color: #f9f9f9;
 }
 
 .dropdown-content a:hover {
@@ -629,17 +640,6 @@ textarea {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
-}
-
-.end {
-  width: 134px;
-  height: 5px;
-  top: 21px;
-  left: 120px;
-  text-align: center;
-  background-color: #0d151e;
-  margin-top: 20px;
-  margin-left: 120px;
 }
 
 @media screen and (min-width: 375px) {
