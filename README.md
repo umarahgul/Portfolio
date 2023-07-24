@@ -17,6 +17,7 @@
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
+  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -88,6 +89,13 @@ Install linters for this project with:
   cd my-project
   npm install
 ```
+### Deployment
+  
+  ```sh
+   https://umarahgul.github.io/Portfolio/  
+```
+ 
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
