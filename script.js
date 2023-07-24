@@ -1,24 +1,17 @@
-
-function openNav()
-{   
-    document.getElementById('hamburger-menu').style.display='block';
-    let div = document.querySelector('#top');
-    div.classList.add('blur');
-
+function openNav() {
+  document.getElementById('hamburger-menu').style.display = 'block';
+  const div = document.querySelector('#top');
+  div.classList.add('blur');
 }
-function closeNav()
- {  
-    document.getElementById('hamburger-menu').style.display = 'none';
-    let div = document.querySelector('#top');
-    div.classList.remove('blur');
-
+function closeNav() {
+  document.getElementById('hamburger-menu').style.display = 'none';
+  const div = document.querySelector('#top');
+  div.classList.remove('blur');
 }
 
+document.querySelector(' #hamburger-menu').addEventListener('click', openNav);
 
- document.querySelector(' #hamburger-menu').addEventListener('click', openNav);
-
- document.querySelector('#closebtn').addEventListener('click', closeNav);
-
+document.querySelector('#closebtn').addEventListener('click', closeNav);
 
 //  document.getElementById('menu-bars').addEventListener('click', function() {
 //     var blurDiv = document.querySelector('.blur');
