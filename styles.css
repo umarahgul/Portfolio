@@ -153,10 +153,10 @@ h1 {
   height: 750px;
   display: none;
   position: absolute;
-  position:fixed;
+  position: fixed;
   opacity: 0.8;
   top: 0;
-  padding-top: 5px; 
+  padding-top: 5px;
 }
 
 .blur {
@@ -189,7 +189,7 @@ h1 {
   display: flex;
   flex-direction: column;
   color: white;
-  align-items:flex-start;
+  align-items: flex-start;
 }
 
 li {
@@ -916,6 +916,7 @@ textarea {
     .mobile-display {
       display: none;
     }
+
     .hamburger-menu {
       visibility: hidden;
     }
