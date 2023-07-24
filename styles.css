@@ -172,6 +172,22 @@ h1 {
 #hamburger-menu > .end {
  margin-top:470px;
 }
+#hamburger-menu > .end {
+  margin-top: 470px;
+}
+
+.popmenu-list {
+  width: hug (351px);
+  height: hug (184px);
+  margin-top: 44px;
+  top: 90px;
+  left: 12px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+}
 /* .overlay {
 
   position: fixed; /* Sit on top of the page content 
