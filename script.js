@@ -2,19 +2,18 @@
 function openNav()
 {   
     document.getElementById('hamburger-menu').style.display='block';
-    //document.getElementById('#hamburger-menu').toggle('visible');
     let div = document.querySelector('#top');
-    div.classList.toggle('blur');
+    div.classList.add('blur');
 
 }
 function closeNav()
  {  
     document.getElementById('hamburger-menu').style.display = 'none';
+    let div = document.querySelector('#top');
+    div.classList.remove('blur');
+
 }
 
-//  function blur() {
-//      document.getElementId('top').style.filter='blur(8px)';
-//  }
 
  document.querySelector(' #hamburger-menu').addEventListener('click', openNav);
 

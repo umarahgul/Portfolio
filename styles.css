@@ -149,25 +149,29 @@ h1 {
 
 #hamburger-menu {
   background-image: url(images/Overlay.png);
-  width: 375px;
-  height: 812px;
+  /* height: 37.75rem;
+  width: 23.4375rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7.125rem 1.5rem;
+  width: 375px; 
+  height: 750px;
   display:none;
-  position: absolute;
-  left:20;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-
-  
+  /* position: absolute;
+  left:45px; */
+  opacity: 0.8;
+  top:0;
+  padding-top:44px;
 }
 
 .blur {
-  /* backdrop-filter: blur(8px); */
   filter: blur(5px);
-  opacity: 0.8;
-   
-  
+  opacity: 0.8; 
 } 
+#hamburger-menu > .end {
+ margin-top:470px;
+}
 /* .overlay {
 
   position: fixed; /* Sit on top of the page content 
@@ -182,6 +186,29 @@ h1 {
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements 
   cursor: pointer; 
 } */
+
+.popmenu-list {
+  width: Hug (351px);
+  height: Hug (184px);
+  margin-top:44px;
+  top: 90px;
+  left: 12px;
+  gap: 8px;
+  display:flex;
+  flex-direction: column;
+  color:white;
+  align-items: center;
+}
+
+.popmenu-list > li {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+
+}
 
 #closebtn {
   padding-top:20px;
@@ -629,6 +656,7 @@ textarea {
   margin-top: 20px;
   margin-left: 120px;
 }
+
 
 @media screen and (min-width: 375px) {
   .works-section {
