@@ -14,15 +14,6 @@ function closeNav()
 
 }
 
-function display_portfolio(){
-
-}
-function display_About() {
-
-}
-function display_contact() {
-
-}
 
  document.querySelector(' #hamburger-menu').addEventListener('click', openNav);
 
