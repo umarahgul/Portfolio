@@ -105,6 +105,21 @@ h1 {
   text-align: left;
 }
 
+#project-popup {
+  width: Hug (343px);
+  height: Hug (713px);
+  top: 60px;
+  left: 16px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px;
+  gap: 12px;
+  background-color: #fff;
+  display:none;
+
+  
+}
+
 .pg1 {
   height: 9.125rem;
   width: 20.4375rem;
