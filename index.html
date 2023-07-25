@@ -5,26 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900" rel="stylesheet">
 </head>
-
 <body>
     <header>
-    
-        <nav>
-        <a href="#" class="logo rotate">Gul</a>
-        <a href="#" class="menu-bars"><img src="images/Union.png"></a>
-        <ul id="desktop-menu">
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-
+            <nav>
+          <a href="#" class="logo ">Gul</a>
+          <img src="images/Union.png" onclick="openNav()" class="menu-bars mobile-display" >
+            <ul id="desktop-menu">
+            <li><a href="#jump-to-works-section-desktop">Portfolio</a></li>
+            <li><a href="#About-page-desktop">About</a></li>
+            <li><a href="#jump-to-contacts-desktop">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <section id="top">
+    <section id="top">       
         <h1> I’m Umarah. Glad to see you!
         </h1>
         <p class="pg1">I’m a software developer! I can help you build a product ,
@@ -40,12 +39,19 @@
             <li><a href="https://www.twitter.com"><img src="images/angellist.png" /></a></li>
         </ul>
     </section>
-
-    
-    <section class="work-section">
+    <section id="hamburger-menu" class="mobile-display">
+    <img src="images/Icon.png" id="closebtn" onclick="closeNav()">
+    <ul class="popmenu-list">
+        <li onclick="closeNav()"><a href="#jump-to-works-section">Portfolio</a></li>
+        <li onclick="closeNav()"><a href="#About-page">About</a></li>
+        <li onclick="closeNav()"><a href="#jump-to-contacts">Contact</a></li>
+        </ul>
+    <div class="end"></div>
+    </section>
+    <section class="work-section" id="jump-to-works-section">
+        <div id="jump-to-works-section-desktop"></div>
         <article class="works">
-             <img src="images/image-works-1-desktop.png" class="snapshot-desktop"> 
-            
+             <img src="images/image-works-1-desktop.png" class="snapshot-desktop">             
            <img src="./images/Snapshoot Portfolio (1).png" class="snapshot "/> 
             
             <div class="info">
@@ -66,7 +72,7 @@
                 <li class="stack-elem">CSS</li>
                 <li class="stack-elem">Javascript</li>
             </ul>
-           <button class="see-project">See project</button>
+           <button class="see-project" onclick="Popup()">See project</button>
             </div>
     
         </article>
@@ -175,7 +181,8 @@
     </section>
 
 
-    <section class="About-myself">
+    <section class="About-myself" id="About-page">
+        <div id="About-page-desktop"></div>
         <div class="left">
         <h2 id="myself">About Myself</h2>
         <p class="pg2">Hello I’m a software developer! I can help you build a product ,
@@ -198,7 +205,7 @@
         <div class="right">
         <ul class="skills">  
             <li class="dropdown">
-              <a href="#" class="dropdown-btn"><div class="container"><div >Languages</div><img src="images/arrow.png" class="rotate"></div></a>
+              <a href="#" class="dropdown-btn"><div class="container"><div>Languages</div><img src="images/arrow.png" class="rotate"></div></a>
 
               <div class="dropdown-content">
                 <ul class="bg-drp">
@@ -219,7 +226,8 @@
           </ul>
         </div>
     </section>
-    <section class="contact-me">
+    <section class="contact-me" id="jump-to-contacts">
+        <div id="jump-to-contacts-desktop"></div>
     
         <div class="form-header">
         <h2 class="form-heading"> Contact me </h2>
@@ -245,8 +253,5 @@
          </form>
          <div class="end"></div>
  </section>
-   
-
 </body>
-
 </html>

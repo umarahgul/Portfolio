@@ -29,7 +29,7 @@
 
 # 📖 Portfolio <a name="about-project"></a>
 
-"Portfoilio" is a simple web application that uses HTML, CSS, Figma and linters to showcase the skills and work of a web developer. It includes a collection of projects, an about section, contact information, and other relevant details.It contains a form as well, that uses 'formspree' for submission. The project is implemented using Figma, a powerful design and prototyping tool. Besides building a mobile first version, this project has a desktop verison using RWD, which adds to UX. 
+"Portfoilio" is a simple web application that uses HTML, CSS, Figma and linters to showcase the skills and work of a web developer. It includes a collection of projects, an about section, contact information, and other relevant details.It contains a form as well, that uses 'formspree' for submission. The project is implemented using Figma, a powerful design and prototyping tool. Besides building a mobile first version, this project has a desktop verison using RWD, which adds to UX. Javascript is used to dynamically produce a page in mobile version that opens up on clicking the hamburger-menu. This page has jump links on the page.  
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -39,6 +39,7 @@
   <ul>
     <li>HTML</li>
     <li>CSS</li>
+    <li>Java Script</li>
   </ul>
 </details
 <!-- Features -->
@@ -49,6 +50,7 @@
 <li> Easy navigation between different sections of the portfolio.</li>
 <li> Contact form for users to get in touch with the developer.</li>
 <li> Professional branding and styling.</li>
+<li> Website is responsive and transition from mobile to desktop is smooth</li>
 </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -56,7 +58,9 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- comming soon
+```sh
+https://www.loom.com/share/c4eed30e242e47a0a6c630c26786a76e
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,6 +117,12 @@ LinkedIn: [umarahgul](https://www.linkedein.com/umarahgul)
 
 GitHub: [@gdvl777](https://github.com/gdvl777)
 LinkedIn: [Daniel Villalba](https://www.linkedin.com/in/daniel-villalba)
+
+👤 **Ahmed Alpanna**
+
+- GitHub: [@ALPANNA-GH](https://github.com/ALPANNA-GH)
+- Gmail: [alpanna@gmail.com](mailto:alpanna@gmail.com)
+
 
 
 
