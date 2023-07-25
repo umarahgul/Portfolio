@@ -78,6 +78,7 @@ function populate_mainpage_mobile(){
     parentElement.appendChild(parent);
     let child_img =document.createElement('img');   
     child_img.src=arr_mobile[x].image; 
+    parent.appendChild(child_img);
 
 
    
