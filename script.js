@@ -3,8 +3,6 @@ function openNav() {
   const div = document.querySelector('#top');
   div.classList.add('blur');
   const userAgent = navigator.userAgent.toLowerCase();
-
-  // Check if "mobile" or "tablet" is NOT found in the user agent string
   if (userAgent.indexOf('mobile') === -1 && userAgent.indexOf('tablet') === -1) {
     div.classList.remove('blur');
   }
