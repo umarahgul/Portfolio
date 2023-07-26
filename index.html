@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+   
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900" rel="stylesheet">
@@ -44,22 +44,54 @@
     
     
     <section id="hamburger-menu" class="mobile-display">
-    <img src="images/Icon.png" id="closebtn" onclick="closeNav()">
+    <img src="images/Enabled.png" id="closebtn" onclick="closeNav()">
     <ul class="popmenu-list">
-        <li onclick="closeNav()"><a href="#jump-to-works-section">Portfolio</a></li>
-        <li onclick="closeNav()"><a href="#About-page">About</a></li>
-        <li onclick="closeNav()"><a href="#jump-to-contacts">Contact</a></li>
+        <li onclick="closeNav()" class="menu_list"><a href="#jump-to-works-section">Portfolio</a></li>
+        <li onclick="closeNav()" class="menu_list"><a href="#About-page">About</a></li>
+        <li onclick="closeNav()" class="menu_list"><a href="#jump-to-contacts">Contact</a></li>
         </ul>
     <div class="end"></div>
     </section>
+  
+    <!-- <section id="project-popup" class="works">       
+        <h1>Tonic</h1>
+        <ul class="tags">
+            <li class="tags-li-blod">CANOPY</li>
+            <li><img src="images/Counter.png" class="tags-li"></li>
+            <li class="tags-li">Back End Dev</li>
+            <li><img src="images/Counter.png"></li>
+            <li class="tags-li">2023</li>
+        </ul>
 
+        <img src="images/Snapshoot Portfolio (1).png" alt="imgae of the project" class="mobile-display"/>
 
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas 
+            molestiae fuga corporis laborum, tenetur, dolorum ut repellendus iusto pariatur iste magni, 
+            ipsum doloremque perferendis explicabo iure aspernatur et voluptates!
+        </p>
 
-     <div id="parentElementId"></div>
+        <ul class="stack">
+            <li class="stack-elem">HTML</li>
+            <li class="stack-elem">CSS</li>
+            <li class="stack-elem">Javascript</li>
+        </ul>
+
+        <div class="buttons">
+        <button  class="see-project" >See Live <img src="images/see-live-Icon.png"></button>
+       <button  class="see-project" >See Source <img src="images/Icon -GitHub.png"></button>
+       </div>
+
+        </section>
+ -->
+
+    <div id="parentElementId"></div>
+     <div class="">
+    <div id="project-popup"></div>
+    </div>
 
     
     
-
+<!-- 
 
 
 
@@ -95,15 +127,6 @@
     
         </article>
 
-        <section id="project-popup">
-
-            
-        
-            <p class="pg1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas 
-                molestiae fuga corporis laborum, tenetur, dolorum ut repellendus iusto pariatur iste magni, 
-                ipsum doloremque perferendis explicabo iure aspernatur et voluptates!
-            </p>
-            </section>
         
 
         <article class="works " id="inverse">
@@ -206,7 +229,7 @@
     
         </article>
         
-    </section>
+    </section> -->
 
 
     <section class="About-myself" id="About-page">
@@ -281,5 +304,9 @@
          </form>
          <div class="end"></div>
  </section>
+
+
+ <script src="script.js"></script>
+
 </body>
 </html>
