@@ -167,7 +167,7 @@ function populate_mainpage_mobile(){
 
 /////////////////////////////////////////////////////TEST FOR MEDIA SCREEN ///////////////////////////////////////////////////////////////////
 
-const desktopMediaQuery = window.matchMedia("(min-width: 1024px)");
+//const desktopMediaQuery = window.matchMedia("(min-width: 1024px)");
 
 // function handleMediaChange(event) {
 //   if (event.matches) {
@@ -184,11 +184,11 @@ const desktopMediaQuery = window.matchMedia("(min-width: 1024px)");
 // //   populate_mainpage_desktop();
 // // }
 
-function handleMediaChange(event) {
-  if (desktopMediaQuery.matches) { // Check the media query directly
-    populate_mainpage_desktop();
-  }
-}
+// function handleMediaChange(event) {
+//   if (desktopMediaQuery.matches) { // Check the media query directly
+//     populate_mainpage_desktop();
+//   }
+// }
 
 
 
@@ -197,87 +197,87 @@ function handleMediaChange(event) {
 
 //////////////////////////////////////////////// DESKTOP DESKTOP //////////////////////////////////////////////////////////////////////////////
 
-function populate_mainpage_desktop() {
+// function populate_mainpage_desktop() {
   
-   let parentElement=document.getElementById("parentElement_Desktop");
+//    let parentElement=document.getElementById("parentElement_Desktop");
 
-for (let x=0; x<arr_desktop.length; x++)
-{
+// for (let x=0; x<arr_desktop.length; x++)
+// {
 
-    let parent=document.createElement('section');
-    parent.classList.add('works2');   
-   let child_img =document.createElement('img');   
-   child_img.src=arr_desktop[x].image; 
-   alert(child_img.src);
-   parent.appendChild(child_img);
+//     let parent=document.createElement('section');
+//     parent.classList.add('works2');   
+//    let child_img =document.createElement('img');   
+//    child_img.src=arr_desktop[x].image; 
+//    alert(child_img.src);
+//    parent.appendChild(child_img);
    
 
-   let info =document.createElement('div')
-   parent.classList.add('info');
-  // parent.appendChild(info);
+//    let info =document.createElement('div')
+//    info.classList.add('info');
+//   // parent.appendChild(info);
 
-   let child1=document.createElement('h3');  
-   child1.classList.add('tonic','desktop_display'); 
-   child1.textContent=arr_desktop[x].name;
-   console.log( "Index and value" +arr_desktop[x]+ "  "+arr_desktop[x].name)        // used the array element
-   info.appendChild(child1);                   // apended
+//    let child1=document.createElement('h3');  
+//    child1.classList.add('tonic','desktop_display'); 
+//    child1.textContent=arr_desktop[x].name;
+//    console.log( "Index and value" +arr_desktop[x]+ "  "+arr_desktop[x].name)        // used the array element
+//    info.appendChild(child1);                   // apended
    
 
-   let child_desc=document.createElement('p');
-   child_desc.textContent=arr_desktop[x].description;
-   child_desc.classList.add('pg2');
-   child_desc.classList.add('display_desktop');
-   info.appendChild(child_desc);
+//    let child_desc=document.createElement('p');
+//    child_desc.textContent=arr_desktop[x].description;
+//    child_desc.classList.add('pg2');
+//    child_desc.classList.add('display_desktop');
+//    info.appendChild(child_desc);
   
 
-  let child_ul=document.createElement('ul');
-  child_ul.classList.add("stack");
+//   let child_ul=document.createElement('ul');
+//   child_ul.classList.add("stack");
 
   
-  for (let tech of arr_desktop[x].technology) {
-   let child_li = document.createElement('li');
-   child_li.textContent = tech;
-   child_li.classList.add('stack-elem');
-   child_ul.appendChild(child_li);
- }
+//   for (let tech of arr_desktop[x].technology) {
+//    let child_li = document.createElement('li');
+//    child_li.textContent = tech;
+//    child_li.classList.add('stack-elem');
+//    child_ul.appendChild(child_li);
+//  }
  
-  info.appendChild(child_ul);
+//   info.appendChild(child_ul);
 
-  let buttonElement = document.createElement('button');
-  buttonElement.classList.add('see-project');
+//   let buttonElement = document.createElement('button');
+//   buttonElement.classList.add('see-project');
   
-  buttonElement.textContent = ("See Project "); 
-  buttonElement.setAttribute('data-index', x);
-  buttonElement.addEventListener('click', function(event) {
+//   buttonElement.textContent = ("See Project "); 
+//   buttonElement.setAttribute('data-index', x);
+//   buttonElement.addEventListener('click', function(event) {
    
-    const butn =event.target;
+//     const butn =event.target;
 
-   let projectIndex=butn.getAttribute('data-index'); 
-   const name_project =arr_desktop[projectIndex].name;
-   const desc_project=arr_desktop[projectIndex].description;
-   const image_project=arr_desktop[projectIndex].image;
-   const tech_project=arr_desktop[projectIndex].technology;
-   const link1_project=arr_desktop[projectIndex].link1;
-   const link2_project=arr_desktop[projectIndex].link2;
-   Popup(name_project, desc_project, image_project, tech_project, link1_project, link2_project);
+//    let projectIndex=butn.getAttribute('data-index'); 
+//    const name_project =arr_desktop[projectIndex].name;
+//    const desc_project=arr_desktop[projectIndex].description;
+//    const image_project=arr_desktop[projectIndex].image;
+//    const tech_project=arr_desktop[projectIndex].technology;
+//    const link1_project=arr_desktop[projectIndex].link1;
+//    const link2_project=arr_desktop[projectIndex].link2;
+//    Popup(name_project, desc_project, image_project, tech_project, link1_project, link2_project);
     
-  });
+//   });
 
 
-  parent.appendChild(info);
-  parent.appendChild(buttonElement);
-  parentElement.appendChild(parent);
-}
+//   parent.appendChild(info);
+//   parent.appendChild(buttonElement);
+//   parentElement.appendChild(parent);
+// }
 
   
    
 
 
 
-  }
+  //}
 
   document.addEventListener("DOMContentLoaded", populate_mainpage_mobile);
-  //document.addEventListener("DOMContentLoaded", populate_mainpage_desktop);
+
 
 
 
@@ -289,11 +289,26 @@ function Popup(name, descr, image, technology, l1, l2) {
   let parentElement = document.getElementById('project-popup');
   let parent=document.createElement('section');
   parent.classList.add('works');   
- let child1=document.createElement('h1');      // added h1
- child1.textContent=name;       // used the array element
- parent.appendChild(child1);                   // apended
+
+
+  
  
- let child_img =document.createElement('img');   
+ 
+
+
+ let child1=document.createElement('h1');      // added h1
+ child1.textContent=name;
+ 
+ 
+
+ let img_button=document.createElement('img');
+ img_button.src="images/close_button.png";
+     // used the array element
+ img_button.appendChild(child1);    
+ parent.appendChild(child1);             // apended
+ 
+ let child_img =document.createElement('img');  
+ child_img.classList.add('right'); 
  child_img.src=image; 
  parent.appendChild(child_img);
  
@@ -334,12 +349,17 @@ btns.classList.add('buttons');
 let  buttonElement2 = document.createElement('button');
  buttonElement2.classList.add('see-project');
  buttonElement2.textContent=("See Source");
+
  let img_source =document.createElement('img');   
  img_source.src="images/Icon -GitHub.png" 
  buttonElement2.appendChild(img_source)
  btns.appendChild(buttonElement2);
  parent.appendChild(btns);
-parentElement.appendChild(parent); 
+ 
+
+
+ 
+parentElement.appendChild(parent);
 }
 
 

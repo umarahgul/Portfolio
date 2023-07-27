@@ -25,10 +25,6 @@ header {
   height: 4.5rem;
 }
 
-
-
-
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -655,6 +651,7 @@ textarea {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  border:solid red;
 }
 .button-form {
   width: fit-content;
@@ -699,7 +696,7 @@ textarea {
       border-bottom-left-radius: 100px;
     }
     
-    nav {
+    /* nav {} */
 
     .menu-bars img {
       display: none;
@@ -756,7 +753,7 @@ textarea {
       margin-left: -20px;
     }
 
-    .works2 {
+    .works {
       width: 1156px;
       height: 496px;
       margin-top: 100px;
