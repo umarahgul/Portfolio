@@ -9,9 +9,9 @@ function openNav() {
   }
 }
 function closeNav() {
-  document.getElementById('hamburger-menu').style.display = 'none';
+  let x = document.getElementById('hamburger-menu').style.display = 'none';
   const div = document.querySelector('#top');
-  console.log("called" );
+  console.log("called" + x );
   div.classList.remove('blur');
 }
 
@@ -108,8 +108,8 @@ function populate_mainpage_mobile(){
    buttonElement.textContent = ("See Project "); 
    buttonElement.setAttribute('data-index', x);
    buttonElement.addEventListener('click', function(event) {
-    const button =event.target;
-    let projectIndex=button.getAttribute('data-index');
+    const butn =event.target;
+    let projectIndex=butn.getAttribute('data-index');
     
     const name_project =arr_mobile[projectIndex].name;
     const desc_project=arr_mobile[projectIndex].description;
