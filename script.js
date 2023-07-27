@@ -106,18 +106,27 @@ function populate_mainpage_mobile(){
 
   for(let x=0; x< arr_mobile.length; x++)
   {
-   
+     
      let parent=document.createElement('section');
      parent.classList.add('works');                    
     let child_img =document.createElement('img');   
     child_img.src=arr_mobile[x].image; 
     parent.appendChild(child_img);
+
+   
+    let info_div=document.createElement('div');
+    info_div.classList.add('info');
+    parent.appendChild(info_div);
     let child1=document.createElement('h1');     
     child1.textContent=arr_mobile[x].name;
-    parent.appendChild(child1);        
+    
+
+
+    info_div.appendChild(child1);  
+
     let child_ul=document.createElement('ul');
     child_ul.classList.add("stack");
-
+    
    
    for (let tech of arr_mobile[x].technology) {
     let child_li = document.createElement('li');
@@ -125,14 +134,15 @@ function populate_mainpage_mobile(){
     child_li.classList.add('stack-elem');
     child_ul.appendChild(child_li);
   }
-  
-    parent.appendChild(child_ul);
-
+    
+   
+    info_div.appendChild(child_ul);
+   
     
     let child_desc=document.createElement('p');
     child_desc.textContent=arr_mobile[x].description;
     child_desc.classList.add('pg2','mobile_display');
-    parent.appendChild(child_desc);
+    info_div.appendChild(child_desc);
    
 
    
@@ -140,12 +150,15 @@ function populate_mainpage_mobile(){
    buttonElement.classList.add('see-project');
    
    buttonElement.textContent = ("See Project "); 
+   info_div.appendChild(buttonElement);
+
    buttonElement.setAttribute('data-index', x);
    buttonElement.addEventListener('click', function(event) {
     const butn =event.target;
     let projectIndex=butn.getAttribute('data-index');
-    parent.appendChild(buttonElement);
-
+    
+   
+    //parent.addChild(info_div);
     parentElement.appendChild(parent);
 
     const name_project =arr_mobile[projectIndex].name;
