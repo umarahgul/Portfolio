@@ -108,7 +108,7 @@ function populate_mainpage_mobile(){
   {
      
      let parent=document.createElement('section');
-     parent.classList.add('works');                    
+     parent.classList.add('works','works_mobile');                    
     let child_img =document.createElement('img');   
     child_img.src=arr_mobile[x].image; 
     parent.appendChild(child_img);
@@ -153,14 +153,10 @@ function populate_mainpage_mobile(){
    info_div.appendChild(buttonElement);
 
    buttonElement.setAttribute('data-index', x);
+
    buttonElement.addEventListener('click', function(event) {
     const butn =event.target;
     let projectIndex=butn.getAttribute('data-index');
-    
-   
-    //parent.addChild(info_div);
-    parentElement.appendChild(parent);
-
     const name_project =arr_mobile[projectIndex].name;
     const desc_project=arr_mobile[projectIndex].description;
     const image_project=arr_mobile[projectIndex].image;
@@ -171,7 +167,7 @@ function populate_mainpage_mobile(){
      
    });
   
-   parent.appendChild(buttonElement);
+   parent.appendChild(info_div);
     parentElement.appendChild(parent);
 
  }
