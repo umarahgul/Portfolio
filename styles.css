@@ -25,6 +25,10 @@ header {
   height: 4.5rem;
 }
 
+
+
+
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -607,6 +611,7 @@ li .list-item #prg-lang {
   gap: 10px;
 }
 
+buttons
 input,
 textarea {
   width: 327px;
@@ -639,7 +644,18 @@ textarea {
   text-align: left;
   padding: 10px;
 }
-
+.works2 {
+  width: 1156px;
+  height: 496px;
+  margin-top: 100px;
+  background-color: #fff;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
 .button-form {
   width: fit-content;
   height: 48px;
@@ -662,7 +678,7 @@ textarea {
 
 @media screen and (min-width: 375px) {
   .works-section {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr); 
   }
 
   @media screen and (min-width: 1024px) {
@@ -682,6 +698,8 @@ textarea {
       padding: 289px 260px;
       border-bottom-left-radius: 100px;
     }
+    
+    nav {
 
     .menu-bars img {
       display: none;
@@ -738,14 +756,14 @@ textarea {
       margin-left: -20px;
     }
 
-    .works {
+    .works2 {
       width: 1156px;
       height: 496px;
       margin-top: 100px;
       background-color: #fff;
       margin-bottom: 50px;
       border-radius: 8px;
-      display: inline-block;
+      /* display: inline-block; */
       display: flex;
       flex-direction: row;
       gap: 20px;
@@ -758,6 +776,7 @@ textarea {
       left: 590px;
       padding: 24px;
       gap: 24px;
+      border: solid red;
     }
 
     .snapshot {
