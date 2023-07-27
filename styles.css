@@ -567,6 +567,12 @@ li .list-item #prg-lang {
   margin-top: 0;
 }
 
+#error-message {
+display:none;
+color:red;
+
+}
+
 .form-header {
   display: flex;
   flex-direction: column;

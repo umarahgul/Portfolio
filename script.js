@@ -227,6 +227,25 @@ function close_popup()
 
 }
 
-document.querySelector('.close_button').addEventListener('click', close_popup);
+//document.querySelector('.close_button').addEventListener('click', close_popup);
 
 
+function validation(){
+ //let form= document.getElementsByClassName('contact-me-form');
+ let email=document.getElementById('e-mail');
+ let exp=/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+ let error_message= document.getElementById('error-message');
+   
+ if (exp.test(email.value))
+
+ { alert('submitting form');
+}
+  
+  else 
+  {console.log('valid email');
+    error_message.style.display="inline";
+    //no submission and updated error message
+  }
+
+
+}
