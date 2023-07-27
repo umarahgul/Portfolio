@@ -66,7 +66,7 @@ header a {
 .desktop-menu {
   display: none;
 }
-
+.close_button {}
 .menu-bars {
   width: hug (2rem);
   height: 2rem;
@@ -105,6 +105,21 @@ h1 {
   text-align: left;
 }
 
+.div_close {
+display:flex;
+flex-direction: row;
+justify-content: space-around;
+margin-bottom:8px;
+height:30px;
+
+}
+
+.div_close > img {
+  height:25px;
+}
+
+
+
 #project-popup {
   left: 16px;
   border-radius: 16px;
@@ -113,7 +128,7 @@ h1 {
   top: 0;
   padding-top: 5px;
   z-index: 9999;
-  width:100%;
+  width:343px;
   height:713px;
   margin-left:31.5%;
 }
@@ -245,20 +260,7 @@ li {
   margin-left: 90%;
 }
 
-.works_mobile {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  margin-top: 1rem;
-  padding: 16px;
-  gap: 5px;
-  width: 327px;
-  height: 552px;
-  background: #fff;
-  border: 1px solid #dfe1e6;
-  border-radius: 8px;
-  margin-bottom: 50px;
-}
+/*  */
 
 .snapshot-desktop {
   display: none;
@@ -607,7 +609,22 @@ li .list-item #prg-lang {
   gap: 10px;
 }
 
-buttons
+.info_mobile{
+
+  background-color: #fff;
+  border: 1px solid #fff;
+  display:flex;
+  flex-direction: column;
+  width: Hug (327px);
+  height: Hug (552px);
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.buttons,
 input,
 textarea {
   width: 327px;
@@ -640,8 +657,6 @@ textarea {
   text-align: left;
   padding: 10px;
 }
-
-
 
 .button-form {
   width: fit-content;
@@ -751,17 +766,12 @@ textarea {
         background-color: #fff;
         margin-bottom: 50px;
         border-radius: 8px;
-        /* display: inline-block; */
         display: flex;
         flex-direction: row;
         gap: 20px;
   
       }
-
-
-
-    }
-
+    
     .info {
       width: 100%;
       height: auto;
@@ -920,7 +930,7 @@ textarea {
     .end {
       display: none;
     }
-
+     
     .form-info li .button-form {
       margin-left: 100px;
     }
