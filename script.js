@@ -16,7 +16,7 @@ function closeNav() {
 
 try {
   document.querySelector('#openMenuBtn').addEventListener('click', openNav);
-} catch{console.log("error handled");}
+} catch { console.log('error handled'); }
 document.querySelector('#closebtn').addEventListener('click', closeNav);
 
 const arrMobile = [
@@ -163,7 +163,7 @@ function Popup(name, descr, image, technology, l1, l2) {
   parent.appendChild(childUl);
 
   const btns = document.createElement('div');
-  btns.classList.add('buttons');
+  btns.classList.add('buttons1');
 
   const buttonElement1 = document.createElement('button');
   buttonElement1.classList.add('see-project');
