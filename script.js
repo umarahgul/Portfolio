@@ -140,12 +140,14 @@ function Popup(name, descr, image, technology, l1, l2) {
   div_close.appendChild(child1);
 
   const close = document.createElement('img');
-  close.classList.add('close_button');
+  close.setAttribute('id','close_button');
+  //close.classList.add('close_button');
   close.src = 'images/close_button.png';
   div_close.appendChild(close);
   parent.appendChild(div_close);
 
   const child_img = document.createElement('img');
+  
   child_img.classList.add('right');
   child_img.src = image;
   parent.appendChild(child_img);
@@ -188,18 +190,40 @@ function Popup(name, descr, image, technology, l1, l2) {
   parent.appendChild(btns);
 
   parentElement.appendChild(parent);
+
+
+
+
+
 }
 
-function close_popup() {
-  document.getElementsById('project-popup').style.display = 'none';
+
+
+const closePop =document.getElementById('close_button');
+
+  function closePopup(){
+    
+    closePop.addEventListener('click',closePopup);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      
+      const mobilePopup = document.getElementById('project-popup'); 
+      
+       mobilePopup.style.display = 'none';
+      
+    });
+
+
+
 }
+  
 
-// document.querySelector('.close_button').addEventListener('click', close_popup);
 
-function validation(event) {
+document.querySelector('#close_button').addEventListener('click',closePop );
+
+function validation() {
   const mail = document.getElementById('e-mail').value;
   const form = document.getElementById('contact-me-form');
-  const msg = document.getElementById('error-message');
   let email = mail;
   email.toString();
 
@@ -211,7 +235,7 @@ function validation(event) {
   let str = email;
   str = str.toUpperCase();
   console.log(str);
-  if (str === email) {
+  if (str == email) {
     alert('cannot submit the form , the email has upper case letters');
     document.getElementById('error-message').style.display = 'block';
     form.addEventListener('submit', (e) => {

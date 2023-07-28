@@ -568,7 +568,7 @@ li .list-item #prg-lang {
   position:relative;
   top: -45px;
   right:-180px;
-  width:fit-content
+  width:fit-content;
   border: solid red;
 
 }
