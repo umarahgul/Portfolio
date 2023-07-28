@@ -195,27 +195,35 @@ function closePopup() {
   document.getElementById('project-popup').style.display = 'none';
 }
 
-// function validation(event) {
-//   const mail = document.getElementById('e-mail').value;
-//   const form = document.getElementById('contact-me-form');
-//   let email = mail;
-//   email.toString();
+function validation(event) {
 
-//   email = email.replace('@', '');
-//   email = email.replace(/\./g, '');
+  const form = document.querySelector("#contact-me-form");
+  const email = form.querySelector("#e-mail");
+  const formSubmitBtn = form.querySelector(".button-form");
 
-//   console.log(email);
+  function emailLowerCase() {
+     const emailValue = email.value;
+     
+    if(emailValue.toLowerCase() === emailValue )
+    {
+      document.getElementById('error-message').style.display='none';
+      return true;
+    }
+    else {
+      document.getElementById('error-message').style.display='inline';
+      return false;
+    }
+  }
 
-//   let str = email;
-//   str = str.toUpperCase();
-//   console.log(str);
-//   if (str === email) {
-//     alert('cannot submit the form , the email has upper case letters');
-//     document.getElementById('error-message').style.display = 'block';
-//     form.addEventListener('submit', (e) => {
-//       e.preventDefault();
-//     });
-//   } else {
-//     alert('can submit');
-//   }
-// }
+    formSubmitBtn.addEventListener("click", (event) => {
+      event.preventDefault();
+    
+      if (emailLowerCase()) {
+        form.submit();
+      }
+    });
+
+
+  }
+
+
