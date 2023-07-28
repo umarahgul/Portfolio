@@ -195,35 +195,28 @@ function closePopup() {
   document.getElementById('project-popup').style.display = 'none';
 }
 
-function validation(event) {
-
-  const form = document.querySelector("#contact-me-form");
-  const email = form.querySelector("#e-mail");
-  const formSubmitBtn = form.querySelector(".button-form");
+function validation() {
+  const form = document.querySelector('#contact-me-form');
+  const email = form.querySelector('#e-mail');
+  const formSubmitBtn = form.querySelector('.button-form');
 
   function emailLowerCase() {
-     const emailValue = email.value;
-     
-    if(emailValue.toLowerCase() === emailValue )
-    {
-      document.getElementById('error-message').style.display='none';
+    const emailValue = email.value;
+
+    if (emailValue.toLowerCase() === emailValue) {
+      document.getElementById('error-message').style.display = 'none';
       return true;
     }
-    else {
-      document.getElementById('error-message').style.display='inline';
-      return false;
+
+    document.getElementById('error-message').style.display = 'inline';
+    return false;
+  }
+
+  formSubmitBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    if (emailLowerCase()) {
+      form.submit();
     }
-  }
-
-    formSubmitBtn.addEventListener("click", (event) => {
-      event.preventDefault();
-    
-      if (emailLowerCase()) {
-        form.submit();
-      }
-    });
-
-
-  }
-
-
+  });
+}
