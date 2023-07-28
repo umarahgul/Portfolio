@@ -294,7 +294,6 @@ li {
   list-style: none;
   background-color: #fff;
   margin-top: 10%;
-  border: solid red;
 }
 
 .stack-elem:hover {
@@ -1019,7 +1018,7 @@ textarea {
     }
 
     #popup-layout > img {
-      height: 500px;
+      height: 31.25rem;
       margin-top: 15px;
     }
 

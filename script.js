@@ -16,7 +16,7 @@ function closeNav() {
 
 try {
   document.querySelector('#openMenuBtn').addEventListener('click', openNav);
-} catch{}
+} catch {}
 document.querySelector('#closebtn').addEventListener('click', closeNav);
 
 const arrMobile = [
@@ -56,8 +56,6 @@ const arrMobile = [
     'link-to-source': '#',
   }];
 
-  
-
 function populateMainpage() {
   const parentElement = document.getElementById('parentElementId');
 
@@ -72,6 +70,7 @@ function populateMainpage() {
     infoDiv.classList.add('info');
     parent.appendChild(infoDiv);
     const child1 = document.createElement('h1');
+    child1.classList.add('tonic');
     child1.textContent = arrMobile[x].name;
 
     infoDiv.appendChild(child1);
@@ -154,7 +153,7 @@ function Popup(name, descr, image, technology, l1, l2) {
   const childUl = document.createElement('ul');
   childUl.classList.add('stack');
 
-  for (let y=0; y<technology.length; y += 1) {
+  for (let y = 0; y < technology.length; y += 1) {
     const childLi = document.createElement('li');
     childLi.textContent = technology[y];
     childLi.classList.add('stack-elem');
@@ -188,13 +187,9 @@ function Popup(name, descr, image, technology, l1, l2) {
   document.getElementById('closeButton').addEventListener('click', closePopup);
 }
 
-
-
 function closePopup() {
   document.getElementById('project-popup').style.display = 'none';
 }
-
-
 
 // function validation(event) {
 //   const mail = document.getElementById('e-mail').value;
