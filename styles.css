@@ -683,8 +683,9 @@ textarea {
   text-align: center;
 }
 
-.error { 
-  display: flex; justify-content: space-around; 
+.error {
+  display: flex;
+  justify-content: space-around;
 }
 
 @media screen and (min-width: 375px) {
