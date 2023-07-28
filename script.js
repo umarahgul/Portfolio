@@ -19,10 +19,6 @@ try {
 } catch {}
 document.querySelector('#closebtn').addEventListener('click', closeNav);
 
-
-
-
-
 const arrMobile = [
   {
     name: 'Tonic',
@@ -193,7 +189,6 @@ function Popup(name, descr, image, technology, l1, l2) {
 
   document.getElementById('closeButton').addEventListener('click', closePopup);
 }
-
 
 function closePopup() {
   document.getElementById('project-popup').style.display = 'none';
