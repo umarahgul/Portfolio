@@ -55,10 +55,10 @@ const arrMobile = [
     'link-live-version': '#',
     'link-to-source': '#',
   }];
-  
-  function closePopup() {
-    document.getElementById('project-popup').style.display = 'none';
-  }
+
+function closePopup() {
+  document.getElementById('project-popup').style.display = 'none';
+}
 
 function Popup(name, descr, image, technology, l1, l2) {
   document.getElementById('project-popup').style.display = 'block';
@@ -194,8 +194,6 @@ function populateMainpage() {
 }
 
 document.addEventListener('DOMContentLoaded', populateMainpage);
-
-
 
 const form = document.querySelector('#contact-me-form');
 const email = form.querySelector('#e-mail');

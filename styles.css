@@ -135,9 +135,7 @@ h1 {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin-left: 0px;
-
-
+  margin-left: 0;
 }
 
 .pg1 {
@@ -570,12 +568,10 @@ li .list-item #prg-lang {
   color: red;
   font-weight: 400;
   width: fit-content;
-  height:fit-content;
+  height: fit-content;
   border: solid red;
-  padding:5px;
+  padding: 5px;
   margin-top: 15px;
-  
-  
 }
 
 .form-header {
@@ -687,13 +683,13 @@ textarea {
   text-align: center;
 }
 
-.error { display:flex; justify-content: space-around;}
+.error { display: flex; justify-content: space-around; }
 
 @media screen and (min-width: 375px) {
   .works-section {
     grid-template-columns: repeat(1, 1fr);
   }
-
+}
   @media screen and (min-width: 1024px) {
     #top {
       background-color: #fff;
@@ -1034,4 +1030,4 @@ textarea {
       margin-top: -5%;
     }
   }
-}
+
