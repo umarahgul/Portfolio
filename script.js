@@ -60,12 +60,13 @@ const arr_mobile = [
     'link-to-source': '#',
   }];
 
+  
 /// //////////////////////////////////////////////MOBILE MOBILE ///////////////////////////////////////////////////////////////////////////////////////////////
 
 function populate_mainpage_mobile() {
   const parentElement = document.getElementById('parentElementId');
 
-  for (let x = 0; x < arr_mobile.length; x++) {
+  for (let x = 0; x < arr_mobile.length; x += 1) {
     const parent = document.createElement('section');
     parent.classList.add('works', 'info_mobile');
     const child_img = document.createElement('img');
@@ -83,9 +84,9 @@ function populate_mainpage_mobile() {
     const child_ul = document.createElement('ul');
     child_ul.classList.add('stack');
 
-    for (const tech of arr_mobile[x].technology) {
+    for (let y=0; y<arr_mobile[x].technology.length; y += 1) {
       const child_li = document.createElement('li');
-      child_li.textContent = tech;
+      child_li.textContent =arr_mobile[x].technology[y];
       child_li.classList.add('stack-elem');
       child_ul.appendChild(child_li);
     }
@@ -124,12 +125,16 @@ function populate_mainpage_mobile() {
 
 document.addEventListener('DOMContentLoaded', populate_mainpage_mobile);
 
+
 function Popup(name, descr, image, technology, l1, l2) {
+
+
   document.getElementById('project-popup').style.display = 'block';
 
   const parentElement = document.getElementById('project-popup');
   const parent = document.createElement('section');
   parent.classList.add('works', 'info_mobile');
+  parent.setAttribute('id','popup-layout');
 
   const div_close = document.createElement('div');
   div_close.classList.add('div_close');
@@ -140,10 +145,15 @@ function Popup(name, descr, image, technology, l1, l2) {
   div_close.appendChild(child1);
 
   const close = document.createElement('img');
-  close.classList.add('close_button');
+ // close.classList.add('close_button');
+  close.id='closeButton';
   close.src = 'images/close_button.png';
   div_close.appendChild(close);
   parent.appendChild(div_close);
+  //div_close.innerHTML= "<img src=\"images/close_button.png\" \'id=closeButton\' />" 
+  
+  
+ 
 
   const child_img = document.createElement('img');
   child_img.classList.add('right');
@@ -188,13 +198,16 @@ function Popup(name, descr, image, technology, l1, l2) {
   parent.appendChild(btns);
 
   parentElement.appendChild(parent);
-}
 
-function close_popup() {
-  document.getElementsById('project-popup').style.display = 'none';
+  document.getElementById("closeButton").addEventListener('click', close_popup);
 }
+ // document.addEventListener('DOMContentLoaded', close_popup);
+ 
 
-// document.querySelector('.close_button').addEventListener('click', close_popup);
+ function close_popup() {
+  document.getElementById('project-popup').style.display="none";
+ }
+
 
 function validation(event) {
   const mail = document.getElementById('e-mail').value;

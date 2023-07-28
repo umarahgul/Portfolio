@@ -121,7 +121,7 @@ h1 {
   left: 16px;
   border-radius: 16px;
   display: none;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   padding-top: 5px;
   z-index: 9999;
@@ -985,6 +985,54 @@ textarea {
 
     #divider {
       width: 684px;
+    }
+    #popup-layout {
+      display: flex;
+      flex-direction: column;
+      width: 800px;
+      height: 750px;
+      top: 77px;
+      left: 142px;
+      margin-left:0;
+      margin-bottom:50%;
+      position:fixed;
+      left:20%;
+      top:-15%;
+      border: 1px #EBECF0;
+    }
+
+    #popup-layout .pg2 {
+      width: Hug (778px);
+      height: Hug (271px);
+      top: 781px;
+      left: 24px;
+      gap: 12px;
+  
+      margin-left:10px;
+      
+    }
+     .div_close {
+      margin-left:10px;
+      width:750px;
+      margin-top:15px;
+     }
+
+    #popup-layout .stack {
+      margin-left:50%;
+      margin-top: -20%;
+      
+    }
+    #popup-layout > img {
+       height: 500px;
+
+       margin-top: 15px;
+    }
+
+    #popup-layout .buttons {
+     margin-left:47%;
+     margin-top: -5%;
+
+
     }
   }
 }
