@@ -230,22 +230,44 @@ function close_popup()
 //document.querySelector('.close_button').addEventListener('click', close_popup);
 
 
-function validation(){
- //let form= document.getElementsByClassName('contact-me-form');
- let email=document.getElementById('e-mail');
- let exp=/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
- let error_message= document.getElementById('error-message');
+function validation(event){
+
+ let mail=document.getElementById('e-mail').value;
+ let form=document.getElementById('contact-me-form');
+ let msg=document.getElementById('error-message');
+  let email=mail;
+  email.toString();
+
+   email=email.replace('@','');
+   email=email.replace(/\./g,'');
    
- if (exp.test(email.value))
+   console.log(email);
 
- { alert('submitting form');
-}
-  
-  else 
-  {console.log('valid email');
-    error_message.style.display="inline";
-    //no submission and updated error message
-  }
+   let str=email;
+   str=str.toUpperCase();
+    console.log(str);
+   if(str===email)
+   {
+
+    alert('cannot submit the form , the email has upper case letters');
+    document.getElementById('error-message').style.display= 'block';
+    form.addEventListener('submit', (e)=>{
+    e.preventDefault();
+  })
+
+   }
+   else
+   {
+
+    alert('can submit');
+   }
 
 
-}
+
+ }
+
+ 
+
+ 
+
+

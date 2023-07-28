@@ -564,6 +564,13 @@ li .list-item #prg-lang {
 #error-message {
   display: none;
   color: red;
+  font-weight: 400;
+  position:relative;
+  top: -45px;
+  right:-180px;
+  width:fit-content
+  border: solid red;
+
 }
 
 .form-header {
@@ -655,6 +662,7 @@ textarea {
   padding: 10px;
 }
 
+
 .button-form {
   width: fit-content;
   height: 48px;
@@ -674,6 +682,7 @@ textarea {
   letter-spacing: 0.03em;
   text-align: center;
 }
+
 
 @media screen and (min-width: 375px) {
   .works-section {
@@ -918,7 +927,7 @@ textarea {
       top: auto;
     }
 
-    .contact-me-form {
+    #contact-me-form {
       position: relative;
       left: 38%;
     }
