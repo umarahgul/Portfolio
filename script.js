@@ -16,7 +16,7 @@ function closeNav() {
 
 try {
   document.querySelector('#openMenuBtn').addEventListener('click', openNav);
-} catch {}
+} catch{console.log("error handled");}
 document.querySelector('#closebtn').addEventListener('click', closeNav);
 
 const arrMobile = [
@@ -62,7 +62,7 @@ function populateMainpage() {
   for (let x = 0; x < arrMobile.length; x += 1) {
     const parent = document.createElement('section');
     parent.classList.add('works', 'info_mobile');
-    parent.setAttribute('id','jump-to-works-section');
+    parent.setAttribute('id', 'jump-to-works-section');
     const childImg = document.createElement('img');
     childImg.src = arrMobile[x].image;
     parent.appendChild(childImg);
@@ -167,14 +167,14 @@ function Popup(name, descr, image, technology, l1, l2) {
 
   const buttonElement1 = document.createElement('button');
   buttonElement1.classList.add('see-project');
-  buttonElement1.innerHTML = '<a href =`${l1}`></a>';
+  buttonElement1.innerHTML = `<a href ="${l1}"></a>`;
   buttonElement1.textContent = ('See Live');
 
   const imgLive = document.createElement('img');
   imgLive.src = 'images/see-live-icon.png';
   buttonElement1.appendChild(imgLive);
   btns.appendChild(buttonElement1);
- l2="https:\\google.com";
+  l2 = 'https:\\google.com';
   const buttonElement2 = document.createElement('button');
   buttonElement2.classList.add('see-project');
   buttonElement2.innerHTML = `<a href ="${l2}"></a>`;
