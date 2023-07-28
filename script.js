@@ -21,7 +21,6 @@ try {
 } catch { console.log(''); }
 document.querySelector('#closebtn').addEventListener('click', closeNav);
 
-// document.querySelector('').addEventListener('click',close_popup);
 
 /// /////////////////////////////////////////////////////////////
 
@@ -91,10 +90,10 @@ function Popup(name, descr, image, technology, l1, l2) {
   childImg.src = image;
   parent.appendChild(childImg);
 
-  const child_Desc = document.createElement('p');
-  child_Desc.textContent = descr;
-  child_Desc.classList.add('pg2');
-  parent.appendChild(child_Desc);
+  const childDesc = document.createElement('p');
+  childDesc.textContent = descr;
+  childDesc.classList.add('pg2');
+  parent.appendChild(childDesc);
 
   const childUl = document.createElement('ul');
   childUl.classList.add('stack');
@@ -131,7 +130,7 @@ function Popup(name, descr, image, technology, l1, l2) {
   parentElement.appendChild(parent);
 }
 
-/// //////////////////////////////////////////////MOBILE MOBILE ///////////////////////////////////////////////////////////////////////////////////////////////
+/// //////////////////////////////////////////////
 
 function populateMainpage() {
   const parentElement = document.getElementById('parentElementId');
@@ -151,17 +150,17 @@ function populateMainpage() {
 
     infoDiv.appendChild(child1);
 
-    const child_ul = document.createElement('ul');
-    child_ul.classList.add('stack');
+    const childUl = document.createElement('ul');
+    childUl.classList.add('stack');
 
     for (const tech of arrMobile[x].technology) {
-      const child_li = document.createElement('li');
-      child_li.textContent = tech;
-      child_li.classList.add('stack-elem');
-      child_ul.appendChild(child_li);
+      const childLi = document.createElement('li');
+      childLi.textContent = tech;
+      childLi.classList.add('stack-elem');
+      childUl.appendChild(childLi);
     }
 
-    infoDiv.appendChild(child_ul);
+    infoDiv.appendChild(childUl);
 
     const childDesc = document.createElement('p');
     childDesc.textContent = arrMobile[x].description;
@@ -179,13 +178,13 @@ function populateMainpage() {
     buttonElement.addEventListener('click', (event) => {
       const butn = event.target;
       const projectIndex = butn.getAttribute('data-index');
-      const name_Project = arrMobile[projectIndex].name;
-      const desc_Project = arrMobile[projectIndex].description;
-      const image_Project = arrMobile[projectIndex].image;
-      const tech_Project = arrMobile[projectIndex].technology;
-      const link1_Project = arrMobile[projectIndex].link1;
-      const link2_Project = arrMobile[projectIndex].link2;
-      Popup(name_project, desc_Project, image_Project, tech_Project, link1_Project, link2_Project);
+      const nameProject = arrMobile[projectIndex].name;
+      const descProject = arrMobile[projectIndex].description;
+      const imageProject = arrMobile[projectIndex].image;
+      const techProject = arrMobile[projectIndex].technology;
+      const link1Project = arrMobile[projectIndex].link1;
+      const link2Project = arrMobile[projectIndex].link2;
+      Popup(nameProject, descProject, imageProject, techProject, link1Project, link2Project);
     });
 
     parent.appendChild(infoDiv);
@@ -195,13 +194,12 @@ function populateMainpage() {
 
 document.addEventListener('DOMContentLoaded', populateMainpage);
 
-/// //////////////////////////////////////////////////////////////POPOUP //////////////////////////////////////////////////////////////////////////////////////
+/// /////////////////////////////////////
 
-function close_popup() {
+function closePopup() {
   document.getElementById('project-popup').style.display = 'none';
 }
 
-// document.querySelector('x').addEventListener('click', close_popup);
 
 const form = document.querySelector('#contact-me-form');
 const email = form.querySelector('#e-mail');
