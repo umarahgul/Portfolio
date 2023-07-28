@@ -166,7 +166,7 @@ function Popup(name, descr, image, technology, l1, l2) {
 
   const buttonElement1 = document.createElement('button');
   buttonElement1.classList.add('see-project');
-  buttonElement1.innerHTML = '<a href =${l1}></a>';
+  buttonElement1.innerHTML = '<a href =`${l1}`></a>';
   buttonElement1.textContent = ('See Live');
 
   const imgLive = document.createElement('img');
@@ -176,7 +176,7 @@ function Popup(name, descr, image, technology, l1, l2) {
 
   const buttonElement2 = document.createElement('button');
   buttonElement2.classList.add('see-project');
-  buttonElement2.innerHTML = '<a href =${l2}></a>';
+  buttonElement2.innerHTML = '<a href =`${l2}`></a>';
   buttonElement2.textContent = ('See Source');
 
   const imgSource = document.createElement('img');
