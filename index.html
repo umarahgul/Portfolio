@@ -83,12 +83,13 @@
 
         </section>
  -->
-
+   
     <div id="parentElementId"></div>
 
-    <div id="parentElement_Desktop"></div>
     
     <div id="project-popup"></div>
+    
+   
 
 
     
@@ -300,10 +301,10 @@
                  <textarea id="message" maxlength="500" name="message" required placeholder="Write message here..."></textarea> </li>
         <li>
 
-            <span id="error-message">Using Upper case in email: Invalid</span>    
-            <button class="button-form see-project " type="submit" onclick="emailLowerCase()">
+            
+            <button class="button-form see-project " type="submit" onclick="validation()">
                 Get in touch
-              </button></li>
+              </button><span id="error-message"> * Invalid email address</span> </li>
                  </ul>
          </form>
          <div class="end"></div>

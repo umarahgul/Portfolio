@@ -1,5 +1,3 @@
-// import { div } from "prelude-ls";
-
 function openNav() {
   document.getElementById('hamburger-menu').style.display = 'block';
   const div = document.querySelector('#top');
@@ -18,10 +16,8 @@ function closeNav() {
 
 try {
   document.querySelector('#openMenuBtn').addEventListener('click', openNav);
-} catch { console.log(''); }
+} catch { console.log('error handled'); }
 document.querySelector('#closebtn').addEventListener('click', closeNav);
-
-/// /////////////////////////////////////////////////////////////
 
 const arrMobile = [
   {
@@ -60,83 +56,13 @@ const arrMobile = [
     'link-to-source': '#',
   }];
 
-function Popup(name, descr, image, technology, l1, l2) {
-  document.getElementById('project-popup').style.display = 'block';
-
-  const parentElement = document.getElementById('project-popup');
-  const parent = document.createElement('section');
-  parent.classList.add('works', 'info_mobile');
-
-  const divClose = document.createElement('div');
-  divClose.classList.add('divClose');
-
-  const child1 = document.createElement('h1');
-  child1.textContent = name;
-  divClose.appendChild(child1);
-
-  const close = document.createElement('img');
-  close.id = 'close_button';
-  // close.classList.add('close_button');
-  const x = document.createElement('div');
-  x.id = 'close';
-  divClose.appendChild(x);
-  close.src = 'images/close_button.png';
-  divClose.appendChild(close);
-  parent.appendChild(divClose);
-
-  const childImg = document.createElement('img');
-  childImg.classList.add('right');
-  childImg.src = image;
-  parent.appendChild(childImg);
-
-  const childDesc = document.createElement('p');
-  childDesc.textContent = descr;
-  childDesc.classList.add('pg2');
-  parent.appendChild(childDesc);
-
-  const childUl = document.createElement('ul');
-  childUl.classList.add('stack');
-
-  for (const tech of technology) {
-    const childLi = document.createElement('li');
-    childLi.textContent = tech;
-    childLi.classList.add('stack-elem');
-    childUl.appendChild(childLi);
-  }
-  parent.appendChild(childUl);
-
-  const btns = document.createElement('div');
-  btns.classList.add('buttons');
-
-  const buttonElement1 = document.createElement('button');
-  buttonElement1.classList.add('see-project');
-  buttonElement1.textContent = ('See Live');
-  const imglive = document.createElement('img');
-  imglive.src = 'images/see-live-icon.png';
-  buttonElement1.appendChild(imglive);
-  btns.appendChild(buttonElement1);
-
-  const buttonElement2 = document.createElement('button');
-  buttonElement2.classList.add('see-project');
-  buttonElement2.textContent = ('See Source');
-
-  const imgSource = document.createElement('img');
-  imgSource.src = 'images/Icon -GitHub.png';
-  buttonElement2.appendChild(imgSource);
-  btns.appendChild(buttonElement2);
-  parent.appendChild(btns);
-
-  parentElement.appendChild(parent);
-}
-
-/// //////////////////////////////////////////////
-
 function populateMainpage() {
   const parentElement = document.getElementById('parentElementId');
 
-  for (let x = 0; x < arrMobile.length; x + 1) {
+  for (let x = 0; x < arrMobile.length; x += 1) {
     const parent = document.createElement('section');
     parent.classList.add('works', 'info_mobile');
+    parent.setAttribute('id', 'jump-to-works-section');
     const childImg = document.createElement('img');
     childImg.src = arrMobile[x].image;
     parent.appendChild(childImg);
@@ -145,6 +71,7 @@ function populateMainpage() {
     infoDiv.classList.add('info');
     parent.appendChild(infoDiv);
     const child1 = document.createElement('h1');
+    child1.classList.add('tonic');
     child1.textContent = arrMobile[x].name;
 
     infoDiv.appendChild(child1);
@@ -152,9 +79,9 @@ function populateMainpage() {
     const childUl = document.createElement('ul');
     childUl.classList.add('stack');
 
-    for (const tech of arrMobile[x].technology) {
+    for (let y = 0; y < arrMobile[x].technology.length; y += 1) {
       const childLi = document.createElement('li');
-      childLi.textContent = tech;
+      childLi.textContent = arrMobile[x].technology[y];
       childLi.classList.add('stack-elem');
       childUl.appendChild(childLi);
     }
@@ -193,33 +120,102 @@ function populateMainpage() {
 
 document.addEventListener('DOMContentLoaded', populateMainpage);
 
-/// /////////////////////////////////////
+function Popup(name, descr, image, technology, l1, l2) {
+  document.getElementById('project-popup').style.display = 'block';
+
+  const parentElement = document.getElementById('project-popup');
+  const parent = document.createElement('section');
+  parent.classList.add('works', 'info_mobile');
+  parent.setAttribute('id', 'popup-layout');
+
+  const divClose = document.createElement('div');
+  divClose.classList.add('div_close');
+
+  const child1 = document.createElement('h1');
+  child1.textContent = name;
+  divClose.appendChild(child1);
+
+  const close = document.createElement('img');
+  close.id = 'closeButton';
+  close.src = 'images/close_button.png';
+  divClose.appendChild(close);
+  parent.appendChild(divClose);
+
+  const childImg = document.createElement('img');
+  childImg.classList.add('right');
+  childImg.src = image;
+  parent.appendChild(childImg);
+
+  const childDesc = document.createElement('p');
+  childDesc.textContent = descr;
+  childDesc.classList.add('pg2');
+  parent.appendChild(childDesc);
+
+  const childUl = document.createElement('ul');
+  childUl.classList.add('stack');
+
+  for (let y = 0; y < technology.length; y += 1) {
+    const childLi = document.createElement('li');
+    childLi.textContent = technology[y];
+    childLi.classList.add('stack-elem');
+    childUl.appendChild(childLi);
+  }
+  parent.appendChild(childUl);
+
+  const btns = document.createElement('div');
+  btns.classList.add('buttons1');
+
+  const buttonElement1 = document.createElement('button');
+  buttonElement1.classList.add('see-project');
+  buttonElement1.innerHTML = `<a href ="${l1}"></a>`;
+  buttonElement1.textContent = ('See Live');
+
+  const imgLive = document.createElement('img');
+  imgLive.src = 'images/see-live-icon.png';
+  buttonElement1.appendChild(imgLive);
+  btns.appendChild(buttonElement1);
+  l2 = 'https:\\google.com';
+  const buttonElement2 = document.createElement('button');
+  buttonElement2.classList.add('see-project');
+  buttonElement2.innerHTML = `<a href ="${l2}"></a>`;
+  buttonElement2.textContent = ('See Source');
+
+  const imgSource = document.createElement('img');
+  imgSource.src = 'images/Icon -GitHub.png';
+  buttonElement2.appendChild(imgSource);
+  btns.appendChild(buttonElement2);
+  parent.appendChild(btns);
+
+  parentElement.appendChild(parent);
+
+  document.getElementById('closeButton').addEventListener('click', closePopup);
+}
 
 function closePopup() {
   document.getElementById('project-popup').style.display = 'none';
 }
 
-const form = document.querySelector('#contact-me-form');
-const email = form.querySelector('#e-mail');
-const formSubmitBtn = form.querySelector('.button-form');
+// function validation(event) {
+//   const mail = document.getElementById('e-mail').value;
+//   const form = document.getElementById('contact-me-form');
+//   let email = mail;
+//   email.toString();
 
-function emailLowerCase() {
-  const emailValue = email.value;
+//   email = email.replace('@', '');
+//   email = email.replace(/\./g, '');
 
-  if (emailValue.toLowerCase() === emailValue) {
-    document.getElementById('error-message').style.display = 'none';
-    return true;
-  }
-  document.getElementById('error-message').style.display = 'inline';
-  // showError.innerText = "Your email should be in lower case!";
-  // showError.classList.add("error");
-  return false;
-}
+//   console.log(email);
 
-formSubmitBtn.addEventListener('click', (event) => {
-  event.preventDefault();
-
-  if (emailLowerCase()) {
-    form.submit();
-  }
-});
+//   let str = email;
+//   str = str.toUpperCase();
+//   console.log(str);
+//   if (str === email) {
+//     alert('cannot submit the form , the email has upper case letters');
+//     document.getElementById('error-message').style.display = 'block';
+//     form.addEventListener('submit', (e) => {
+//       e.preventDefault();
+//     });
+//   } else {
+//     alert('can submit');
+//   }
+// }
