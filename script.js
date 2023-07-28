@@ -19,11 +19,11 @@ try {
 } catch {}
 document.querySelector('#closebtn').addEventListener('click', closeNav);
 
-// document.querySelector('').addEventListener('click',close_popup);
 
-/// ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const arr_mobile = [
+
+
+const arrMobile = [
   {
     name: 'Tonic',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
@@ -65,37 +65,37 @@ const arr_mobile = [
 function populate_mainpage_mobile() {
   const parentElement = document.getElementById('parentElementId');
 
-  for (let x = 0; x < arr_mobile.length; x += 1) {
+  for (let x = 0; x < arrMobile.length; x += 1) {
     const parent = document.createElement('section');
     parent.classList.add('works', 'info_mobile');
-    const child_img = document.createElement('img');
-    child_img.src = arr_mobile[x].image;
-    parent.appendChild(child_img);
+    const childImg = document.createElement('img');
+    childImg.src = arrMobile[x].image;
+    parent.appendChild(childImg);
 
     const info_div = document.createElement('div');
     info_div.classList.add('info');
     parent.appendChild(info_div);
     const child1 = document.createElement('h1');
-    child1.textContent = arr_mobile[x].name;
+    child1.textContent = arrMobile[x].name;
 
     info_div.appendChild(child1);
 
-    const child_ul = document.createElement('ul');
-    child_ul.classList.add('stack');
+    const childUl = document.createElement('ul');
+    childUl.classList.add('stack');
 
-    for (let y = 0; y < arr_mobile[x].technology.length; y += 1) {
+    for (let y = 0; y < arrMobile[x].technology.length; y += 1) {
       const child_li = document.createElement('li');
-      child_li.textContent = arr_mobile[x].technology[y];
+      child_li.textContent = arrMobile[x].technology[y];
       child_li.classList.add('stack-elem');
-      child_ul.appendChild(child_li);
+      childUl.appendChild(child_li);
     }
 
-    info_div.appendChild(child_ul);
+    info_div.appendChild(childUl);
 
-    const child_desc = document.createElement('p');
-    child_desc.textContent = arr_mobile[x].description;
-    child_desc.classList.add('pg2');
-    info_div.appendChild(child_desc);
+    const childDesc = document.createElement('p');
+    childDesc.textContent = arrMobile[x].description;
+    childDesc.classList.add('pg2');
+    info_div.appendChild(childDesc);
 
     const buttonElement = document.createElement('button');
     buttonElement.classList.add('see-project');
@@ -108,13 +108,13 @@ function populate_mainpage_mobile() {
     buttonElement.addEventListener('click', (event) => {
       const butn = event.target;
       const projectIndex = butn.getAttribute('data-index');
-      const name_project = arr_mobile[projectIndex].name;
-      const desc_project = arr_mobile[projectIndex].description;
-      const image_project = arr_mobile[projectIndex].image;
-      const tech_project = arr_mobile[projectIndex].technology;
-      const link1_project = arr_mobile[projectIndex].link1;
-      const link2_project = arr_mobile[projectIndex].link2;
-      Popup(name_project, desc_project, image_project, tech_project, link1_project, link2_project);
+      const nameProject = arrMobile[projectIndex].name;
+      const descProject = arrMobile[projectIndex].description;
+      const imageProject = arrMobile[projectIndex].image;
+      const techProject = arrMobile[projectIndex].technology;
+      const link1Project = arrMobile[projectIndex].link1;
+      const link2Project = arrMobile[projectIndex].link2;
+      Popup(nameProject, descProject, imageProject, techProject, link1Project, link2Project);
     });
 
     parent.appendChild(info_div);
@@ -132,42 +132,41 @@ function Popup(name, descr, image, technology, l1, l2) {
   parent.classList.add('works', 'info_mobile');
   parent.setAttribute('id', 'popup-layout');
 
-  const div_close = document.createElement('div');
-  div_close.classList.add('div_close');
+  const divClose = document.createElement('div');
+  divClose.classList.add('divClose');
 
   const child1 = document.createElement('h1');
   console.log(`value of name${name}`);
   child1.textContent = name;
-  div_close.appendChild(child1);
+  divClose.appendChild(child1);
 
   const close = document.createElement('img');
   // close.classList.add('close_button');
   close.id = 'closeButton';
   close.src = 'images/close_button.png';
-  div_close.appendChild(close);
-  parent.appendChild(div_close);
-  // div_close.innerHTML= "<img src=\"images/close_button.png\" \'id=closeButton\' />"
+  divClose.appendChild(close);
+  parent.appendChild(divClose);
 
-  const child_img = document.createElement('img');
-  child_img.classList.add('right');
-  child_img.src = image;
-  parent.appendChild(child_img);
+  const childImg = document.createElement('img');
+  childImg.classList.add('right');
+  childImg.src = image;
+  parent.appendChild(childImg);
 
-  const child_desc = document.createElement('p');
-  child_desc.textContent = descr;
-  child_desc.classList.add('pg2');
-  parent.appendChild(child_desc);
+  const childDesc = document.createElement('p');
+  childDesc.textContent = descr;
+  childDesc.classList.add('pg2');
+  parent.appendChild(childDesc);
 
-  const child_ul = document.createElement('ul');
-  child_ul.classList.add('stack');
+  const childUl = document.createElement('ul');
+  childUl.classList.add('stack');
 
   for (const tech of technology) {
     const child_li = document.createElement('li');
     child_li.textContent = tech;
     child_li.classList.add('stack-elem');
-    child_ul.appendChild(child_li);
+    childUl.appendChild(child_li);
   }
-  parent.appendChild(child_ul);
+  parent.appendChild(childUl);
 
   const btns = document.createElement('div');
   btns.classList.add('buttons');
@@ -175,28 +174,28 @@ function Popup(name, descr, image, technology, l1, l2) {
   const buttonElement1 = document.createElement('button');
   buttonElement1.classList.add('see-project');
   buttonElement1.textContent = ('See Live');
-  const img_live = document.createElement('img');
-  img_live.src = 'images/see-live-icon.png';
-  buttonElement1.appendChild(img_live);
+  const imgLive = document.createElement('img');
+  imgLive.src = 'images/see-live-icon.png';
+  buttonElement1.appendChild(imgLive);
   btns.appendChild(buttonElement1);
 
   const buttonElement2 = document.createElement('button');
   buttonElement2.classList.add('see-project');
   buttonElement2.textContent = ('See Source');
 
-  const img_source = document.createElement('img');
-  img_source.src = 'images/Icon -GitHub.png';
-  buttonElement2.appendChild(img_source);
+  const imgSource = document.createElement('img');
+  imgSource.src = 'images/Icon -GitHub.png';
+  buttonElement2.appendChild(imgSource);
   btns.appendChild(buttonElement2);
   parent.appendChild(btns);
 
   parentElement.appendChild(parent);
 
-  document.getElementById('closeButton').addEventListener('click', close_popup);
+  document.getElementById('closeButton').addEventListener('click', closePopup);
 }
-// document.addEventListener('DOMContentLoaded', close_popup);
 
-function close_popup() {
+
+function closePopup() {
   document.getElementById('project-popup').style.display = 'none';
 }
 
