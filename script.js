@@ -58,7 +58,7 @@ const arrMobile = [
 
 /// //////////////////////////////////////////////MOBILE MOBILE ///////////////////////////////////////////////////////////////////////////////////////////////
 
-function populate_mainpage_mobile() {
+function populateMainpage() {
   const parentElement = document.getElementById('parentElementId');
 
   for (let x = 0; x < arrMobile.length; x += 1) {
@@ -68,36 +68,36 @@ function populate_mainpage_mobile() {
     childImg.src = arrMobile[x].image;
     parent.appendChild(childImg);
 
-    const info_div = document.createElement('div');
-    info_div.classList.add('info');
-    parent.appendChild(info_div);
+    const infoDiv = document.createElement('div');
+    infoDiv.classList.add('info');
+    parent.appendChild(infoDiv);
     const child1 = document.createElement('h1');
     child1.textContent = arrMobile[x].name;
 
-    info_div.appendChild(child1);
+    infoDiv.appendChild(child1);
 
     const childUl = document.createElement('ul');
     childUl.classList.add('stack');
 
     for (let y = 0; y < arrMobile[x].technology.length; y += 1) {
-      const child_li = document.createElement('li');
-      child_li.textContent = arrMobile[x].technology[y];
-      child_li.classList.add('stack-elem');
-      childUl.appendChild(child_li);
+      const childLi = document.createElement('li');
+      childLi.textContent = arrMobile[x].technology[y];
+      childLi.classList.add('stack-elem');
+      childUl.appendChild(childLi);
     }
 
-    info_div.appendChild(childUl);
+    infoDiv.appendChild(childUl);
 
     const childDesc = document.createElement('p');
     childDesc.textContent = arrMobile[x].description;
     childDesc.classList.add('pg2');
-    info_div.appendChild(childDesc);
+    infoDiv.appendChild(childDesc);
 
     const buttonElement = document.createElement('button');
     buttonElement.classList.add('see-project');
 
     buttonElement.textContent = ('See Project ');
-    info_div.appendChild(buttonElement);
+    infoDiv.appendChild(buttonElement);
 
     buttonElement.setAttribute('data-index', x);
 
@@ -113,12 +113,16 @@ function populate_mainpage_mobile() {
       Popup(nameProject, descProject, imageProject, techProject, link1Project, link2Project);
     });
 
-    parent.appendChild(info_div);
+    parent.appendChild(infoDiv);
     parentElement.appendChild(parent);
   }
 }
 
-document.addEventListener('DOMContentLoaded', populate_mainpage_mobile);
+document.addEventListener('DOMContentLoaded', populateMainpage);
+
+function closePopup() {
+  document.getElementById('project-popup').style.display = 'none';
+}
 
 function Popup(name, descr, image, technology, l1, l2) {
   document.getElementById('project-popup').style.display = 'block';
@@ -157,10 +161,10 @@ function Popup(name, descr, image, technology, l1, l2) {
   childUl.classList.add('stack');
 
   for (const tech of technology) {
-    const child_li = document.createElement('li');
-    child_li.textContent = tech;
-    child_li.classList.add('stack-elem');
-    childUl.appendChild(child_li);
+    const childLi = document.createElement('li');
+    childLi.textContent = tech;
+    childLi.classList.add('stack-elem');
+    childUl.appendChild(childLi);
   }
   parent.appendChild(childUl);
 
@@ -190,9 +194,7 @@ function Popup(name, descr, image, technology, l1, l2) {
   document.getElementById('closeButton').addEventListener('click', closePopup);
 }
 
-function closePopup() {
-  document.getElementById('project-popup').style.display = 'none';
-}
+
 
 // function validation(event) {
 //   const mail = document.getElementById('e-mail').value;
