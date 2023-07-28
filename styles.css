@@ -565,11 +565,10 @@ li .list-item #prg-lang {
   display: none;
   color: red;
   font-weight: 400;
-  position:relative;
+  position: relative;
   top: -45px;
-  right:-180px;
-  width:fit-content;
-
+  right: -180px;
+  width: fit-content;
 }
 
 .form-header {
@@ -593,6 +592,7 @@ li .list-item #prg-lang {
   letter-spacing: 0;
   text-align: center;
 }
+
 /* .error {
   display: block;
   color: #fff;
@@ -673,7 +673,6 @@ textarea {
   padding: 10px;
 }
 
-
 .button-form {
   width: fit-content;
   height: 48px;
@@ -693,7 +692,6 @@ textarea {
   letter-spacing: 0.03em;
   text-align: center;
 }
-
 
 @media screen and (min-width: 375px) {
   .works-section {
@@ -774,7 +772,6 @@ textarea {
     .footer {
       margin-left: -20px;
     }
-
 
     .works {
       width: 1156px;
