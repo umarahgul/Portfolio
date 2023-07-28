@@ -195,7 +195,7 @@ function closePopup() {
   document.getElementById('project-popup').style.display = 'none';
 }
 
-function validation() {
+
   const form = document.querySelector('#contact-me-form');
   const email = form.querySelector('#e-mail');
   const formSubmitBtn = form.querySelector('.button-form');
@@ -204,11 +204,11 @@ function validation() {
     const emailValue = email.value;
 
     if (emailValue.toLowerCase() === emailValue) {
-      document.getElementById('error-message').style.display = 'none';
+      document.getElementById('error-message').style.visibility = 'hidden';
       return true;
     }
 
-    document.getElementById('error-message').style.display = 'inline';
+    document.getElementById('error-message').style.visibility ='visible';
     return false;
   }
 
@@ -219,4 +219,4 @@ function validation() {
       form.submit();
     }
   });
-}
+

@@ -299,12 +299,12 @@
                  <input type="email" id="e-mail" name="email" required placeholder="loremipsum@gmail.com"/> </li>
           <li>
                  <textarea id="message" maxlength="500" name="message" required placeholder="Write message here..."></textarea> </li>
-        <li>
+        <li class="error">
 
-            <span id="error-message"> * Invalid email address</span> 
-            <button class="button-form see-project " type="submit" onclick="validation()">
+            
+            <button class="button-form see-project " type="submit" >
                 Get in touch
-              </button></li>
+              </button><div id="error-message"> * Invalid email address</div> </li>
                  </ul>
          </form>
          <div class="end"></div>

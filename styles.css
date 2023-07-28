@@ -566,14 +566,16 @@ li .list-item #prg-lang {
 }
 
 #error-message {
-  display: none;
+  visibility: hidden;
   color: red;
   font-weight: 400;
-  position: relative;
-  top: -45px;
-  right: -180px;
   width: fit-content;
+  height:fit-content;
   border: solid red;
+  padding:5px;
+  margin-top: 15px;
+  
+  
 }
 
 .form-header {
@@ -684,6 +686,8 @@ textarea {
   letter-spacing: 0.03em;
   text-align: center;
 }
+
+.error { display:flex; justify-content: space-around;}
 
 @media screen and (min-width: 375px) {
   .works-section {
