@@ -60,7 +60,6 @@ const arr_mobile = [
     'link-to-source': '#',
   }];
 
-  
 /// //////////////////////////////////////////////MOBILE MOBILE ///////////////////////////////////////////////////////////////////////////////////////////////
 
 function populate_mainpage_mobile() {
@@ -84,9 +83,9 @@ function populate_mainpage_mobile() {
     const child_ul = document.createElement('ul');
     child_ul.classList.add('stack');
 
-    for (let y=0; y<arr_mobile[x].technology.length; y += 1) {
+    for (let y = 0; y < arr_mobile[x].technology.length; y += 1) {
       const child_li = document.createElement('li');
-      child_li.textContent =arr_mobile[x].technology[y];
+      child_li.textContent = arr_mobile[x].technology[y];
       child_li.classList.add('stack-elem');
       child_ul.appendChild(child_li);
     }
@@ -125,16 +124,13 @@ function populate_mainpage_mobile() {
 
 document.addEventListener('DOMContentLoaded', populate_mainpage_mobile);
 
-
 function Popup(name, descr, image, technology, l1, l2) {
-
-
   document.getElementById('project-popup').style.display = 'block';
 
   const parentElement = document.getElementById('project-popup');
   const parent = document.createElement('section');
   parent.classList.add('works', 'info_mobile');
-  parent.setAttribute('id','popup-layout');
+  parent.setAttribute('id', 'popup-layout');
 
   const div_close = document.createElement('div');
   div_close.classList.add('div_close');
@@ -145,15 +141,12 @@ function Popup(name, descr, image, technology, l1, l2) {
   div_close.appendChild(child1);
 
   const close = document.createElement('img');
- // close.classList.add('close_button');
-  close.id='closeButton';
+  // close.classList.add('close_button');
+  close.id = 'closeButton';
   close.src = 'images/close_button.png';
   div_close.appendChild(close);
   parent.appendChild(div_close);
-  //div_close.innerHTML= "<img src=\"images/close_button.png\" \'id=closeButton\' />" 
-  
-  
- 
+  // div_close.innerHTML= "<img src=\"images/close_button.png\" \'id=closeButton\' />"
 
   const child_img = document.createElement('img');
   child_img.classList.add('right');
@@ -199,38 +192,35 @@ function Popup(name, descr, image, technology, l1, l2) {
 
   parentElement.appendChild(parent);
 
-  document.getElementById("closeButton").addEventListener('click', close_popup);
+  document.getElementById('closeButton').addEventListener('click', close_popup);
 }
- // document.addEventListener('DOMContentLoaded', close_popup);
- 
+// document.addEventListener('DOMContentLoaded', close_popup);
 
- function close_popup() {
-  document.getElementById('project-popup').style.display="none";
- }
-
-
-function validation(event) {
-  const mail = document.getElementById('e-mail').value;
-  const form = document.getElementById('contact-me-form');
-  const msg = document.getElementById('error-message');
-  let email = mail;
-  email.toString();
-
-  email = email.replace('@', '');
-  email = email.replace(/\./g, '');
-
-  console.log(email);
-
-  let str = email;
-  str = str.toUpperCase();
-  console.log(str);
-  if (str === email) {
-    alert('cannot submit the form , the email has upper case letters');
-    document.getElementById('error-message').style.display = 'block';
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-    });
-  } else {
-    alert('can submit');
-  }
+function close_popup() {
+  document.getElementById('project-popup').style.display = 'none';
 }
+
+// function validation(event) {
+//   const mail = document.getElementById('e-mail').value;
+//   const form = document.getElementById('contact-me-form');
+//   let email = mail;
+//   email.toString();
+
+//   email = email.replace('@', '');
+//   email = email.replace(/\./g, '');
+
+//   console.log(email);
+
+//   let str = email;
+//   str = str.toUpperCase();
+//   console.log(str);
+//   if (str === email) {
+//     alert('cannot submit the form , the email has upper case letters');
+//     document.getElementById('error-message').style.display = 'block';
+//     form.addEventListener('submit', (e) => {
+//       e.preventDefault();
+//     });
+//   } else {
+//     alert('can submit');
+//   }
+// }
