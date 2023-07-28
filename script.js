@@ -129,15 +129,13 @@ function Popup(name, descr, image, technology, l1, l2) {
   parent.setAttribute('id', 'popup-layout');
 
   const divClose = document.createElement('div');
-  divClose.classList.add('divClose');
+  divClose.classList.add('div_close');
 
   const child1 = document.createElement('h1');
-  console.log(`value of name${name}`);
   child1.textContent = name;
   divClose.appendChild(child1);
 
   const close = document.createElement('img');
-  // close.classList.add('close_button');
   close.id = 'closeButton';
   close.src = 'images/close_button.png';
   divClose.appendChild(close);
@@ -156,9 +154,9 @@ function Popup(name, descr, image, technology, l1, l2) {
   const childUl = document.createElement('ul');
   childUl.classList.add('stack');
 
-  for (const tech of technology) {
+  for (let y=0; y<technology.length; y += 1) {
     const childLi = document.createElement('li');
-    childLi.textContent = tech;
+    childLi.textContent = technology[y];
     childLi.classList.add('stack-elem');
     childUl.appendChild(childLi);
   }
