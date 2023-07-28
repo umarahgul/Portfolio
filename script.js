@@ -21,7 +21,6 @@ try {
 } catch { console.log(''); }
 document.querySelector('#closebtn').addEventListener('click', closeNav);
 
-
 /// /////////////////////////////////////////////////////////////
 
 const arrMobile = [
@@ -200,11 +199,9 @@ function closePopup() {
   document.getElementById('project-popup').style.display = 'none';
 }
 
-
 const form = document.querySelector('#contact-me-form');
 const email = form.querySelector('#e-mail');
 const formSubmitBtn = form.querySelector('.button-form');
-const showError = form.querySelector('#error-message');
 
 function emailLowerCase() {
   const emailValue = email.value;
