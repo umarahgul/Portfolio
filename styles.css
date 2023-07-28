@@ -569,7 +569,6 @@ li .list-item #prg-lang {
   top: -45px;
   right:-180px;
   width:fit-content;
-  border: solid red;
 
 }
 
@@ -594,7 +593,19 @@ li .list-item #prg-lang {
   letter-spacing: 0;
   text-align: center;
 }
-
+/* .error {
+  display: block;
+  color: #fff;
+  background-color: #e57373;
+  border: 2px solid #b71c1c;
+  font-size: 16px;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+} */
 .pg-contact {
   width: 327px;
   height: 137px;

@@ -300,10 +300,10 @@
                  <textarea id="message" maxlength="500" name="message" required placeholder="Write message here..."></textarea> </li>
         <li>
 
-            
-            <button class="button-form see-project " type="submit" onclick="validation()">
+            <span id="error-message">Using Upper case in email: Invalid</span>    
+            <button class="button-form see-project " type="submit" onclick="emailLowerCase()">
                 Get in touch
-              </button><span id="error-message"> * Invalid email address</span> </li>
+              </button></li>
                  </ul>
          </form>
          <div class="end"></div>
