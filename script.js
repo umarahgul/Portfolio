@@ -55,83 +55,82 @@ const arrMobile = [
     'link-live-version': '#',
     'link-to-source': '#',
   }];
-  document.addEventListener('DOMContentLoaded', populateMainpage);
+document.addEventListener('DOMContentLoaded', populateMainpage);
 
-  function Popup(name, descr, image, technology, l1, l2) {
-    document.getElementById('project-popup').style.display = 'block';
-  
-    const parentElement = document.getElementById('project-popup');
-    const parent = document.createElement('section');
-    parent.classList.add('works', 'info_mobile');
-    parent.setAttribute('id', 'popup-layout');
-  
-    const divClose = document.createElement('div');
-    divClose.classList.add('div_close');
-  
-    const child1 = document.createElement('h1');
-    child1.textContent = name;
-    divClose.appendChild(child1);
-  
-    const close = document.createElement('img');
-    close.id = 'closeButton';
-    close.src = 'images/close_button.png';
-    divClose.appendChild(close);
-    parent.appendChild(divClose);
-  
-    const childImg = document.createElement('img');
-    childImg.classList.add('right');
-    childImg.src = image;
-    parent.appendChild(childImg);
-  
-    const childDesc = document.createElement('p');
-    childDesc.textContent = descr;
-    childDesc.classList.add('pg2');
-    parent.appendChild(childDesc);
-  
-    const childUl = document.createElement('ul');
-    childUl.classList.add('stack');
-  
-    for (let y = 0; y < technology.length; y += 1) {
-      const childLi = document.createElement('li');
-      childLi.textContent = technology[y];
-      childLi.classList.add('stack-elem');
-      childUl.appendChild(childLi);
-    }
-    parent.appendChild(childUl);
-  
-    const btns = document.createElement('div');
-    btns.classList.add('buttons1');
-  
-    const buttonElement1 = document.createElement('button');
-    buttonElement1.classList.add('see-project');
-    buttonElement1.innerHTML = `<a href ="${l1}"></a>`;
-    buttonElement1.textContent = ('See Live');
-  
-    const imgLive = document.createElement('img');
-    imgLive.src = 'images/see-live-icon.png';
-    buttonElement1.appendChild(imgLive);
-    btns.appendChild(buttonElement1);
-    l2 = 'https:\\google.com';
-    const buttonElement2 = document.createElement('button');
-    buttonElement2.classList.add('see-project');
-    buttonElement2.innerHTML = `<a href ="${l2}"></a>`;
-    buttonElement2.textContent = ('See Source');
-  
-    const imgSource = document.createElement('img');
-    imgSource.src = 'images/Icon -GitHub.png';
-    buttonElement2.appendChild(imgSource);
-    btns.appendChild(buttonElement2);
-    parent.appendChild(btns);
-  
-    parentElement.appendChild(parent);
-  
-    document.getElementById('closeButton').addEventListener('click', closePopup);
-  }
-  
-  function closePopup() {
-    document.getElementById('project-popup').style.display = 'none';
-  }
+function Popup(name, descr, image, technology, l1, l2) {
+  document.getElementById('project-popup').style.display = 'block';
 
+  const parentElement = document.getElementById('project-popup');
+  const parent = document.createElement('section');
+  parent.classList.add('works', 'info_mobile');
+  parent.setAttribute('id', 'popup-layout');
+
+  const divClose = document.createElement('div');
+  divClose.classList.add('div_close');
+
+  const child1 = document.createElement('h1');
+  child1.textContent = name;
+  divClose.appendChild(child1);
+
+  const close = document.createElement('img');
+  close.id = 'closeButton';
+  close.src = 'images/close_button.png';
+  divClose.appendChild(close);
+  parent.appendChild(divClose);
+
+  const childImg = document.createElement('img');
+  childImg.classList.add('right');
+  childImg.src = image;
+  parent.appendChild(childImg);
+
+  const childDesc = document.createElement('p');
+  childDesc.textContent = descr;
+  childDesc.classList.add('pg2');
+  parent.appendChild(childDesc);
+
+  const childUl = document.createElement('ul');
+  childUl.classList.add('stack');
+
+  for (let y = 0; y < technology.length; y += 1) {
+    const childLi = document.createElement('li');
+    childLi.textContent = technology[y];
+    childLi.classList.add('stack-elem');
+    childUl.appendChild(childLi);
+  }
+  parent.appendChild(childUl);
+
+  const btns = document.createElement('div');
+  btns.classList.add('buttons1');
+
+  const buttonElement1 = document.createElement('button');
+  buttonElement1.classList.add('see-project');
+  buttonElement1.innerHTML = `<a href ="${l1}"></a>`;
+  buttonElement1.textContent = ('See Live');
+
+  const imgLive = document.createElement('img');
+  imgLive.src = 'images/see-live-icon.png';
+  buttonElement1.appendChild(imgLive);
+  btns.appendChild(buttonElement1);
+  l2 = 'https:\\google.com';
+  const buttonElement2 = document.createElement('button');
+  buttonElement2.classList.add('see-project');
+  buttonElement2.innerHTML = `<a href ="${l2}"></a>`;
+  buttonElement2.textContent = ('See Source');
+
+  const imgSource = document.createElement('img');
+  imgSource.src = 'images/Icon -GitHub.png';
+  buttonElement2.appendChild(imgSource);
+  btns.appendChild(buttonElement2);
+  parent.appendChild(btns);
+
+  parentElement.appendChild(parent);
+
+  document.getElementById('closeButton').addEventListener('click', closePopup);
+}
+
+function closePopup() {
+  document.getElementById('project-popup').style.display = 'none';
+}
 
 function populateMainpage() {
   const parentElement = document.getElementById('parentElementId');
@@ -194,8 +193,6 @@ function populateMainpage() {
     parentElement.appendChild(parent);
   }
 }
-
-
 
 // function validation(event) {
 //   const mail = document.getElementById('e-mail').value;
