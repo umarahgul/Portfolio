@@ -120,8 +120,9 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 8px;
+  margin: 20px;
   height: 30px;
+  
 }
 
 .div_close > img {
@@ -672,6 +673,20 @@ textarea {
   letter-spacing: 0.03em;
   text-align: center;
 }
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the desired blur intensity */
+  backdrop-filter: blur(8px); /* Adjust the blur radius as needed */
+  pointer-events: none; /* Allows clicks to go through the backdrop to underlying elements */
+  z-index: 99; 
+
+}
+
+
 
 @media screen and (min-width: 375px) {
   .works-section {
@@ -777,7 +792,8 @@ textarea {
       display: flex;
       flex-direction: column;
     } */ 
-
+    
+    
     .snapshot {
       display: none;
     }
@@ -978,6 +994,7 @@ textarea {
     }
 
     #project-popup {
+      padding:20px;
     left: 16px;
     border-radius: 16px;
     display: none;
@@ -1007,7 +1024,6 @@ textarea {
    display:flex;
    flex-direction: row;
    gap:10px;
-   border:solid red;
    width:100%
   }
 
@@ -1021,6 +1037,35 @@ textarea {
       flex-direction: row;
       justify-content: space-around;
  
+    }
+
+    .backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the desired blur intensity */
+      backdrop-filter: blur(8px); /* Adjust the blur radius as needed */
+      pointer-events: none; /* Allows clicks to go through the backdrop to underlying elements */
+      z-index: 99; 
+
+    }
+
+
+
+    .infor {
+      
+
+    }
+
+    .infor .btns {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width:fit-content;
+     
+      gap:8px;
     }
   }
 }

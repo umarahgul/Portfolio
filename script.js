@@ -58,7 +58,8 @@ const arrMobile = [
 
 
 let isPopopen=false;
-
+const backdrop = document.getElementById('backdrop');
+        backdrop.style.display = 'none';
 
 function closePopup() {
   document.getElementById('project-popup').style.display = 'none';
@@ -66,19 +67,48 @@ function closePopup() {
       if (popupContainer) {
         popupContainer.innerHTML = ''; // Clear the popup content
       }
-  
+      const backdrop = document.getElementById('backdrop');
+        backdrop.style.display = 'none';
+      
 }
+
+
 
   function Popup(name, descr, image, technology, l1, l2) {
 
-  if (isPopopen) {
-    closePopup();
-  }
+ 
+
+    const backdrop = document.getElementById('backdrop');
+    backdrop.style.display = 'block';
+    
+   
+  
 
   document.getElementById('project-popup').style.display = 'block';
 
+  
+ 
+
+  // if (Popup.style.display === 'block') {
+  //   // Popup is already open, close it and hide the backdrop
+  //   Popup.style.display = 'none';
+  //   const backdrop = document.getElementById('backdrop');
+  //   if (backdrop) {
+  //     backdrop.style.display = 'none';
+  //   }
+  // } else {
+  //   // Popup is closed, open it and show the backdrop
+  //   Popup.style.display = 'block';
+  //   const backdrop = document.getElementById('backdrop');
+  //   if (backdrop) {
+  //     backdrop.style.display = 'block';
+  //   }
+  // }
 
 
+
+
+  
   const parentElement = document.getElementById('project-popup');
   parentElement.classList.add('overlay');
   const parent = document.createElement('section');
@@ -122,7 +152,7 @@ function closePopup() {
 
 
   const infoDiv=document.createElement('div');
-  infoDiv.classList.add('info');
+  infoDiv.classList.add('infor');
 
   const childUl = document.createElement('ul');
   childUl.classList.add('stack');
@@ -140,6 +170,7 @@ function closePopup() {
   
 
   const btns = document.createElement('div');
+  btns.classList.add('btns');
   
 
   const buttonElement1 = document.createElement('button');
@@ -167,9 +198,6 @@ function closePopup() {
   parent.appendChild(bigContainer);
   parentElement.appendChild(parent);
 
-  
- 
-     
 
   document.getElementById('closeButton').addEventListener('click', closePopup);
 
