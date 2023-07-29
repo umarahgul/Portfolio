@@ -86,35 +86,11 @@ function closePopup() {
 
   document.getElementById('project-popup').style.display = 'block';
 
-  
- 
 
-  // if (Popup.style.display === 'block') {
-  //   // Popup is already open, close it and hide the backdrop
-  //   Popup.style.display = 'none';
-  //   const backdrop = document.getElementById('backdrop');
-  //   if (backdrop) {
-  //     backdrop.style.display = 'none';
-  //   }
-  // } else {
-  //   // Popup is closed, open it and show the backdrop
-  //   Popup.style.display = 'block';
-  //   const backdrop = document.getElementById('backdrop');
-  //   if (backdrop) {
-  //     backdrop.style.display = 'block';
-  //   }
-  // }
-
-
-
-
-  
   const parentElement = document.getElementById('project-popup');
-  parentElement.classList.add('overlay');
   const parent = document.createElement('section');
   parent.classList.add( 'info_mobile');
-  parent.setAttribute('id', 'popup-layout');
-
+ 
   const container=document.createElement('div');
   container.classList.add('container2');
   
@@ -135,7 +111,7 @@ function closePopup() {
 
 
   const childImg = document.createElement('img');
-  //childImg.classList.add('left');
+
   childImg.src = image;
   container.appendChild(childImg);
   parent.appendChild(container);
