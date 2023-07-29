@@ -121,13 +121,17 @@ h1 {
   left: 16px;
   border-radius: 16px;
   display: none;
-  position: fixed;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  /* position: fixed;
   top: 0;
   padding-top: 5px;
   z-index: 9999;
   width: 343px;
   height: 713px;
-  margin-left: 31.5%;
+  margin-left: 31.5%; */
 }
 
 .buttons1 {
@@ -987,47 +991,25 @@ textarea {
       width: 684px;
     }
 
-    #popup-layout {
+    #project-popup {
+      left: 16px;
+      border-radius: 16px;
+      display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+
+ 
+
+     .buttons1 {
       display: flex;
-      flex-direction: column;
-      width: 800px;
-      height: 750px;
-      margin-left: 0;
-      margin-bottom: 50%;
-      position: fixed;
-      left: 20%;
-      top: -15%;
-      border: 1px #ebecf0;
-    }
-
-    #popup-layout .pg2 {
-      width: hug (778px);
-      height: hug (271px);
-      top: 781px;
-      left: 24px;
-      gap: 12px;
-      margin-left: 10px;
-    }
-
-    .div_close {
-      margin-left: 10px;
-      width: 750px;
-      margin-top: 15px;
-    }
-
-    #popup-layout .stack {
-      margin-left: 50%;
-      margin-top: -20%;
-    }
-
-    #popup-layout > img {
-      height: 31.25rem;
-      margin-top: 15px;
-    }
-
-    #popup-layout .buttons {
-      margin-left: 47%;
-      margin-top: -5%;
+      flex-direction: row;
+      justify-content: space-around;
+      /* margin-left: 47%;
+      margin-top: -5%; */
     }
   }
 }

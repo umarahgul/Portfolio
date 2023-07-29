@@ -114,7 +114,7 @@ function Popup(name, descr, image, technology, l1, l2) {
   imgLive.src = 'images/see-live-icon.png';
   buttonElement1.appendChild(imgLive);
   btns.appendChild(buttonElement1);
-  l2 = 'https:\\google.com';
+ 
   const buttonElement2 = document.createElement('button');
   buttonElement2.classList.add('see-project');
   buttonElement2.innerHTML = `<a href ="${l2}"></a>`;
