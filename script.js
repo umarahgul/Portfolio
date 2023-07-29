@@ -56,12 +56,28 @@ const arrMobile = [
     'link-to-source': '#',
   }];
 
+
+let isPopopen=false;
+
+
 function closePopup() {
   document.getElementById('project-popup').style.display = 'none';
+  const popupContainer = document.getElementById('project-popup');
+      if (popupContainer) {
+        popupContainer.innerHTML = ''; // Clear the popup content
+      }
+  
 }
 
-function Popup(name, descr, image, technology, l1, l2) {
+  function Popup(name, descr, image, technology, l1, l2) {
+
+  if (isPopopen) {
+    closePopup();
+  }
+
   document.getElementById('project-popup').style.display = 'block';
+
+
 
   const parentElement = document.getElementById('project-popup');
   parentElement.classList.add('overlay');
@@ -95,11 +111,14 @@ function Popup(name, descr, image, technology, l1, l2) {
   parent.appendChild(container);
 
   
+  const bigContainer=document.createElement('div');
+   bigContainer.classList.add('bigContainer');
 
   const childDesc = document.createElement('p');
   childDesc.textContent = descr;
   childDesc.classList.add('pg2',); 
-  parent.appendChild(childDesc);
+
+  bigContainer.appendChild(childDesc);
 
 
   const infoDiv=document.createElement('div');
@@ -118,9 +137,10 @@ function Popup(name, descr, image, technology, l1, l2) {
  
   infoDiv.appendChild(childUl);
   
+  
 
   const btns = document.createElement('div');
-  btns.classList.add('buttons1');
+  
 
   const buttonElement1 = document.createElement('button');
   buttonElement1.classList.add('see-project');
@@ -143,13 +163,22 @@ function Popup(name, descr, image, technology, l1, l2) {
   btns.appendChild(buttonElement2);
   infoDiv.appendChild(btns);
 
-  parent.appendChild(infoDiv);
+  bigContainer.appendChild(infoDiv);
+  parent.appendChild(bigContainer);
   parentElement.appendChild(parent);
 
-
+  
+ 
+     
 
   document.getElementById('closeButton').addEventListener('click', closePopup);
+
+  
 }
+
+
+//cloze.addEventListener('click', closePopup);
+
 
 function populateMainpage() {
   const parentElement = document.getElementById('parentElementId');
