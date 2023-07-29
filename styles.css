@@ -116,12 +116,17 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
+.infoDiv{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 #project-popup .div_close {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px;
+  margin: 15px;
   height: 30px;
   
 }
@@ -612,13 +617,14 @@ li .list-item #prg-lang {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  width: hug (327px);
+  width: hug (300px);
   height: hug (552px);
   padding: 16px;
   border-radius: 16px;
   border: 1px;
   gap: 12px;
   margin-bottom: 8px;
+ 
 }
 
 .buttons,
@@ -686,7 +692,14 @@ textarea {
   z-index: 99; 
 
 }
-
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width:fit-content;
+ 
+  gap:8px;
+}
 
 
 @media screen and (min-width: 375px) {

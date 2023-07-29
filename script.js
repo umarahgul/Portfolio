@@ -181,7 +181,7 @@ function closePopup() {
 }
 
 
-//cloze.addEventListener('click', closePopup);
+// //////////////////////////POPULATEMAINPAGE/////
 
 
 function populateMainpage() {
@@ -204,6 +204,13 @@ function populateMainpage() {
 
     infoDiv.appendChild(child1);
 
+   
+
+    const childDesc = document.createElement('p');
+    childDesc.textContent = arrMobile[x].description;
+    childDesc.classList.add('pg2');
+    infoDiv.appendChild(childDesc);
+
     const childUl = document.createElement('ul');
     childUl.classList.add('stack');
 
@@ -216,10 +223,6 @@ function populateMainpage() {
 
     infoDiv.appendChild(childUl);
 
-    const childDesc = document.createElement('p');
-    childDesc.textContent = arrMobile[x].description;
-    childDesc.classList.add('pg2');
-    infoDiv.appendChild(childDesc);
 
     const buttonElement = document.createElement('button');
     buttonElement.classList.add('see-project');
