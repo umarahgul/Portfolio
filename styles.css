@@ -116,8 +116,10 @@ h1 {
 #project-popup .div_close {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 8px;
+ 
+
   height: 30px;
 }
 
@@ -560,7 +562,7 @@ li .list-item #prg-lang {
   top: -45px;
   right: -180px;
   width: fit-content;
-  border: solid red;
+
 }
 
 .form-header {
@@ -767,8 +769,8 @@ textarea {
     .info {
       width: 100%;
       height: auto;
-      position:relative;
-      left: 50%
+      position:relative
+      left: 50%;
       /* top: 24px; */
       /* left: 590px; */
       padding: 24px;
@@ -985,16 +987,21 @@ textarea {
         left: 50%;
         transform: translate(-50%, -50%);
         z-index:9999;
+        margin:8px;
 
     }
 
+   .container2 {
+    display: flex;
+    flex-direction: column;
+
  
+   }
 
      .buttons1 {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
-      border: solid red;
+ 
       /* margin-left: 47%;
       margin-top: -5%; */
     }

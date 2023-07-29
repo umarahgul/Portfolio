@@ -68,8 +68,12 @@ function Popup(name, descr, image, technology, l1, l2) {
   parent.classList.add('works', 'info_mobile');
   parent.setAttribute('id', 'popup-layout');
 
+  const container=document.createElement('div');
+  container.classList.add('container2');
+  
   const divClose = document.createElement('div');
   divClose.classList.add('div_close');
+  //container.appendChild(divClose);
 
   const child1 = document.createElement('h1');
   child1.classList.add('tonic');
@@ -80,12 +84,15 @@ function Popup(name, descr, image, technology, l1, l2) {
   close.id = 'closeButton';
   close.src = 'images/close_button.png';
   divClose.appendChild(close);
-  parent.appendChild(divClose);
+  
+  container.appendChild(divClose);
+
 
   const childImg = document.createElement('img');
-  childImg.classList.add('right');
+  //childImg.classList.add('left');
   childImg.src = image;
-  parent.appendChild(childImg);
+  container.appendChild(childImg);
+  parent.appendChild(container);
 
   const infoDiv=document.createElement('div');
   infoDiv.classList.add('info');
