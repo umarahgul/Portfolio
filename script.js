@@ -167,18 +167,22 @@ function populateMainpage() {
     const parent = document.createElement('section');
     parent.classList.add('works', 'info_mobile');
     parent.setAttribute('id', 'jump-to-works-section');
+
     const childImg = document.createElement('img');
     childImg.src = arrMobile[x].image;
     parent.appendChild(childImg);
-
+   ////////<div class=infoDiv> infoDiv opens///////////////////////////
     const infoDiv = document.createElement('div');
     infoDiv.classList.add('info');
     parent.appendChild(infoDiv);
-    const child1 = document.createElement('h1');
+    const child1 = document.createElement('h3');
     child1.classList.add('tonic');
     child1.textContent = arrMobile[x].name;
 
     infoDiv.appendChild(child1);
+
+    
+
 
     const childDesc = document.createElement('p');
     childDesc.textContent = arrMobile[x].description;
@@ -203,6 +207,7 @@ function populateMainpage() {
     buttonElement.textContent = ('See Project ');
     infoDiv.appendChild(buttonElement);
 
+    /////////////</div>///////////////////
     buttonElement.setAttribute('data-index', x);
 
     buttonElement.addEventListener('click', (event) => {
@@ -219,6 +224,7 @@ function populateMainpage() {
 
     parent.appendChild(infoDiv);
     parentElement.appendChild(parent);
+
   }
 }
 
