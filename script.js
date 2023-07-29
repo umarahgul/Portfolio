@@ -218,5 +218,3 @@ formSubmitBtn.addEventListener('click', (event) => {
     form.submit();
   }
 });
-
-
