@@ -112,13 +112,6 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  /* position: fixed;
-  top: 0;
-  padding-top: 5px;
-  z-index: 9999;
-  width: 343px;
-  height: 713px;
-  margin-left: 31.5%; */
 }
 #project-popup .div_close {
   display: flex;
@@ -774,8 +767,10 @@ textarea {
     .info {
       width: 100%;
       height: auto;
-      top: 24px;
-      left: 590px;
+      position:relative;
+      left: 50%
+      /* top: 24px; */
+      /* left: 590px; */
       padding: 24px;
       gap: 24px;
       display: flex;
