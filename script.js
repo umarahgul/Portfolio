@@ -219,22 +219,4 @@ formSubmitBtn.addEventListener('click', (event) => {
   }
 });
 
-const msgform = document.querySelector('#contact-me-form');
-const nameInput = document.querySelector('#name');
-const msgInput = document.querySelector('#message');
-const submitBtn = document.querySelector('.button-form');
-const emailInput = document.querySelector('#e-mail');
 
-let formData = {
-  userName: localStorage.getItem('formData.userName'),
-  userEmail: localStorage.getItem('formData.userlName'),
-  textMsg: localStorage.getItem('formData.userName'),
-};
-
-
-formData = JSON.parse(localStorage.getItem('formData'));
-if (formData) {
-  nameInput.value = formData.userName;
-  emailInput.value = formData.userEmail;
-  textbodyInp.value = formData.textMsg;
-}
