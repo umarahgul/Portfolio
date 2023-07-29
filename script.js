@@ -56,47 +56,35 @@ const arrMobile = [
     'link-to-source': '#',
   }];
 
-
-let isPopopen=false;
 const backdrop = document.getElementById('backdrop');
-        backdrop.style.display = 'none';
+backdrop.style.display = 'none';
 
 function closePopup() {
   document.getElementById('project-popup').style.display = 'none';
   const popupContainer = document.getElementById('project-popup');
-      if (popupContainer) {
-        popupContainer.innerHTML = ''; // Clear the popup content
-      }
-      const backdrop = document.getElementById('backdrop');
-        backdrop.style.display = 'none';
-      
+  if (popupContainer) {
+    popupContainer.innerHTML = ''; // Clear the popup content
+  }
+  const backdrop = document.getElementById('backdrop');
+  backdrop.style.display = 'none';
 }
 
-
-
-  function Popup(name, descr, image, technology, l1, l2) {
-
- 
-
-    const backdrop = document.getElementById('backdrop');
-    backdrop.style.display = 'block';
-    
-   
-  
+function Popup(name, descr, image, technology, l1, l2) {
+  const backdrop = document.getElementById('backdrop');
+  backdrop.style.display = 'block';
 
   document.getElementById('project-popup').style.display = 'block';
 
-
   const parentElement = document.getElementById('project-popup');
   const parent = document.createElement('section');
-  parent.classList.add( 'info_mobile');
- 
-  const container=document.createElement('div');
+  parent.classList.add('info_mobile');
+
+  const container = document.createElement('div');
   container.classList.add('container2');
-  
+
   const divClose = document.createElement('div');
   divClose.classList.add('div_close');
- 
+
   const child1 = document.createElement('h1');
   child1.classList.add('tonic');
   child1.textContent = name;
@@ -106,9 +94,8 @@ function closePopup() {
   close.id = 'closeButton';
   close.src = 'images/close_button.png';
   divClose.appendChild(close);
-  
-  container.appendChild(divClose);
 
+  container.appendChild(divClose);
 
   const childImg = document.createElement('img');
 
@@ -116,18 +103,16 @@ function closePopup() {
   container.appendChild(childImg);
   parent.appendChild(container);
 
-  
-  const bigContainer=document.createElement('div');
-   bigContainer.classList.add('bigContainer');
+  const bigContainer = document.createElement('div');
+  bigContainer.classList.add('bigContainer');
 
   const childDesc = document.createElement('p');
   childDesc.textContent = descr;
-  childDesc.classList.add('pg2',); 
+  childDesc.classList.add('pg2');
 
   bigContainer.appendChild(childDesc);
 
-
-  const infoDiv=document.createElement('div');
+  const infoDiv = document.createElement('div');
   infoDiv.classList.add('infor');
 
   const childUl = document.createElement('ul');
@@ -139,15 +124,11 @@ function closePopup() {
     childLi.classList.add('stack-elem');
     childUl.appendChild(childLi);
   }
-  
- 
+
   infoDiv.appendChild(childUl);
-  
-  
 
   const btns = document.createElement('div');
   btns.classList.add('btns');
-  
 
   const buttonElement1 = document.createElement('button');
   buttonElement1.classList.add('see-project');
@@ -158,7 +139,7 @@ function closePopup() {
   imgLive.src = 'images/see-live-icon.png';
   buttonElement1.appendChild(imgLive);
   btns.appendChild(buttonElement1);
- 
+
   const buttonElement2 = document.createElement('button');
   buttonElement2.classList.add('see-project');
   buttonElement2.innerHTML = `<a href ="${l2}"></a>`;
@@ -174,15 +155,10 @@ function closePopup() {
   parent.appendChild(bigContainer);
   parentElement.appendChild(parent);
 
-
   document.getElementById('closeButton').addEventListener('click', closePopup);
-
-  
 }
 
-
 // //////////////////////////POPULATEMAINPAGE/////
-
 
 function populateMainpage() {
   const parentElement = document.getElementById('parentElementId');
@@ -204,8 +180,6 @@ function populateMainpage() {
 
     infoDiv.appendChild(child1);
 
-   
-
     const childDesc = document.createElement('p');
     childDesc.textContent = arrMobile[x].description;
     childDesc.classList.add('pg2');
@@ -222,7 +196,6 @@ function populateMainpage() {
     }
 
     infoDiv.appendChild(childUl);
-
 
     const buttonElement = document.createElement('button');
     buttonElement.classList.add('see-project');

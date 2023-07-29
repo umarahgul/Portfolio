@@ -106,18 +106,17 @@ h1 {
 }
 
 #project-popup {
-  left: 16px;
-    border-radius: 16px;
-    display: none;
-    position: fixed;
-    z-index:100;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  border-radius: 16px;
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.infoDiv{
-  display:flex;
+.infoDiv {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -128,7 +127,6 @@ h1 {
   justify-content: space-between;
   margin: 15px;
   height: 30px;
-  
 }
 
 .div_close > img {
@@ -568,7 +566,6 @@ li .list-item #prg-lang {
   top: -45px;
   right: -180px;
   width: fit-content;
-
 }
 
 .form-header {
@@ -624,7 +621,6 @@ li .list-item #prg-lang {
   border: 1px;
   gap: 12px;
   margin-bottom: 8px;
- 
 }
 
 .buttons,
@@ -680,6 +676,7 @@ textarea {
   letter-spacing: 0.03em;
   text-align: center;
 }
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -689,18 +686,16 @@ textarea {
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the desired blur intensity */
   backdrop-filter: blur(8px); /* Adjust the blur radius as needed */
   pointer-events: none; /* Allows clicks to go through the backdrop to underlying elements */
-  z-index: 99; 
-
+  z-index: 99;
 }
+
 .btns {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width:fit-content;
- 
-  gap:8px;
+  width: fit-content;
+  gap: 8px;
 }
-
 
 @media screen and (min-width: 375px) {
   .works-section {
@@ -800,14 +795,15 @@ textarea {
       position:relative
       left: 50%;
       /* top: 24px; */
-      /* left: 590px; */
-      /* padding: 24px;
+
+    /* left: 590px; */
+
+    /* padding: 24px;
       gap: 24px;
       display: flex;
       flex-direction: column;
-    } */ 
-    
-    
+    } */
+
     .snapshot {
       display: none;
     }
@@ -1008,36 +1004,33 @@ textarea {
     }
 
     #project-popup {
-      padding:20px;
-    left: 16px;
-    border-radius: 16px;
-    display: none;
-    height:auto;
-    position: fixed;
-    z-index:9999;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
+      padding: 20px;
+      border-radius: 16px;
+      display: none;
+      height: auto;
+      position: fixed;
+      z-index: 9999;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
-  .bigContainer {
-   display:flex;
-   flex-direction: row;
-   gap:10px;
-   width:100%
-  }
+    .bigContainer {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      width: 100%;
+    }
 
-   .container2 {
-    display: flex;
-    flex-direction: column;
-   }
+    .container2 {
+      display: flex;
+      flex-direction: column;
+    }
 
-     .buttons1 {
+    .buttons1 {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
- 
     }
 
     .backdrop {
@@ -1049,24 +1042,15 @@ textarea {
       background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the desired blur intensity */
       backdrop-filter: blur(8px); /* Adjust the blur radius as needed */
       pointer-events: none; /* Allows clicks to go through the backdrop to underlying elements */
-      z-index: 99; 
-
-    }
-
-
-
-    .infor {
-      
-
+      z-index: 99;
     }
 
     .infor .btns {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      width:fit-content;
-     
-      gap:8px;
+      width: fit-content;
+      gap: 8px;
     }
   }
 }
