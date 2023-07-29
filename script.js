@@ -128,6 +128,8 @@ function Popup(name, descr, image, technology, l1, l2) {
 
   parentElement.appendChild(parent);
 
+
+
   document.getElementById('closeButton').addEventListener('click', closePopup);
 }
 
