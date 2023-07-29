@@ -195,16 +195,14 @@ function populateMainpage() {
 
 document.addEventListener('DOMContentLoaded', populateMainpage);
 
-
 // create variables
 const formStore = document.querySelector('#contact-me-form');
 const nameInput = document.querySelector('#name');
 const msgInput = document.querySelector('#message');
-const submitBtn = document.querySelector('.button-form');
+// const submitBtn = document.querySelector('.button-form');
 const emailInput = document.querySelector('#e-mail');
 
-
-// create object to store form 
+// create object to store form
 let formData = {
   userName: localStorage.getItem('formData.userName'),
   userEmail: localStorage.getItem('formData.userEmail'),
@@ -213,16 +211,13 @@ let formData = {
 // check if data is saved get object from local storage
 formData = JSON.parse(localStorage.getItem('formData'));
 
-
-
 if (formData) {
-  nameInput.value = formData.userName; 
+  nameInput.value = formData.userName;
   emailInput.value = formData.userEmail;
   msgInput.value = formData.textMsg;
 }
 
-
-// form validation 
+// form validation
 const form = document.querySelector('#contact-me-form');
 const email = form.querySelector('#e-mail');
 const formSubmitBtn = form.querySelector('.button-form');
@@ -247,8 +242,7 @@ formSubmitBtn.addEventListener('click', (event) => {
   }
 });
 
-
-// save data in the oject 
+// save data in the oject
 function saveData() {
   formData = {
     userName: nameInput.value,
