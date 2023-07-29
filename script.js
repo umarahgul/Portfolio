@@ -72,6 +72,7 @@ function Popup(name, descr, image, technology, l1, l2) {
   divClose.classList.add('div_close');
 
   const child1 = document.createElement('h1');
+  child1.classList.add('tonic');
   child1.textContent = name;
   divClose.appendChild(child1);
 
@@ -86,10 +87,13 @@ function Popup(name, descr, image, technology, l1, l2) {
   childImg.src = image;
   parent.appendChild(childImg);
 
+  const infoDiv=document.createElement('div');
+  infoDiv.classList.add('info');
   const childDesc = document.createElement('p');
   childDesc.textContent = descr;
   childDesc.classList.add('pg2');
-  parent.appendChild(childDesc);
+  infoDiv.appendChild(childDesc);
+  parent.appendChild(infoDiv);
 
   const childUl = document.createElement('ul');
   childUl.classList.add('stack');
@@ -100,7 +104,10 @@ function Popup(name, descr, image, technology, l1, l2) {
     childLi.classList.add('stack-elem');
     childUl.appendChild(childLi);
   }
-  parent.appendChild(childUl);
+  
+  infoDiv.appendChild(childUl);
+  infoDiv.appendChild(childUl);
+  parent.appendChild(infoDiv);
 
   const btns = document.createElement('div');
   btns.classList.add('buttons1');
@@ -124,7 +131,8 @@ function Popup(name, descr, image, technology, l1, l2) {
   imgSource.src = 'images/Icon -GitHub.png';
   buttonElement2.appendChild(imgSource);
   btns.appendChild(buttonElement2);
-  parent.appendChild(btns);
+  infoDiv.appendChild(btns);
+  parent.appendChild(infoDiv);
 
   parentElement.appendChild(parent);
 

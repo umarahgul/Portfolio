@@ -104,19 +104,6 @@ h1 {
   letter-spacing: 0;
   text-align: left;
 }
-
-.div_close {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 8px;
-  height: 30px;
-}
-
-.div_close > img {
-  height: 25px;
-}
-
 #project-popup {
   left: 16px;
   border-radius: 16px;
@@ -133,16 +120,19 @@ h1 {
   height: 713px;
   margin-left: 31.5%; */
 }
-
-.buttons1 {
+#project-popup .div_close {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-left: 0px;
-
-
+  justify-content: space-around;
+  margin-bottom: 8px;
+  height: 30px;
 }
+
+.div_close > img {
+  height: 25px;
+}
+
+
 
 .pg1 {
   height: 9.125rem;
@@ -999,7 +989,8 @@ textarea {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        
+        z-index:9999;
+
     }
 
  
@@ -1008,6 +999,7 @@ textarea {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      border: solid red;
       /* margin-left: 47%;
       margin-top: -5%; */
     }
