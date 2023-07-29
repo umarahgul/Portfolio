@@ -64,8 +64,9 @@ function Popup(name, descr, image, technology, l1, l2) {
   document.getElementById('project-popup').style.display = 'block';
 
   const parentElement = document.getElementById('project-popup');
+  parentElement.classList.add('overlay');
   const parent = document.createElement('section');
-  parent.classList.add('works', 'info_mobile');
+  parent.classList.add( 'info_mobile');
   parent.setAttribute('id', 'popup-layout');
 
   const container=document.createElement('div');
@@ -73,8 +74,7 @@ function Popup(name, descr, image, technology, l1, l2) {
   
   const divClose = document.createElement('div');
   divClose.classList.add('div_close');
-  //container.appendChild(divClose);
-
+ 
   const child1 = document.createElement('h1');
   child1.classList.add('tonic');
   child1.textContent = name;
@@ -94,13 +94,16 @@ function Popup(name, descr, image, technology, l1, l2) {
   container.appendChild(childImg);
   parent.appendChild(container);
 
-  const infoDiv=document.createElement('div');
-  infoDiv.classList.add('info');
+  
+
   const childDesc = document.createElement('p');
   childDesc.textContent = descr;
-  childDesc.classList.add('pg2');
-  infoDiv.appendChild(childDesc);
-  parent.appendChild(infoDiv);
+  childDesc.classList.add('pg2',); 
+  parent.appendChild(childDesc);
+
+
+  const infoDiv=document.createElement('div');
+  infoDiv.classList.add('info');
 
   const childUl = document.createElement('ul');
   childUl.classList.add('stack');
@@ -112,9 +115,9 @@ function Popup(name, descr, image, technology, l1, l2) {
     childUl.appendChild(childLi);
   }
   
+ 
   infoDiv.appendChild(childUl);
-  infoDiv.appendChild(childUl);
-  parent.appendChild(infoDiv);
+  
 
   const btns = document.createElement('div');
   btns.classList.add('buttons1');
@@ -139,8 +142,8 @@ function Popup(name, descr, image, technology, l1, l2) {
   buttonElement2.appendChild(imgSource);
   btns.appendChild(buttonElement2);
   infoDiv.appendChild(btns);
-  parent.appendChild(infoDiv);
 
+  parent.appendChild(infoDiv);
   parentElement.appendChild(parent);
 
 
