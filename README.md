@@ -60,7 +60,7 @@ The cards' section is generated dynamically using the javascript and DOM is used
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 ```sh
-https://www.loom.com/share/c4eed30e242e47a0a6c630c26786a76e
+coming soon
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
