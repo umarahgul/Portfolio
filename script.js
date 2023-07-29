@@ -56,10 +56,9 @@ const arrMobile = [
     'link-to-source': '#',
   }];
 
-  function closePopup() {
-    document.getElementById('project-popup').style.display = 'none';
-  }
-
+function closePopup() {
+  document.getElementById('project-popup').style.display = 'none';
+}
 
 function Popup(name, descr, image, technology, l1, l2) {
   document.getElementById('project-popup').style.display = 'block';
@@ -132,8 +131,6 @@ function Popup(name, descr, image, technology, l1, l2) {
   document.getElementById('closeButton').addEventListener('click', closePopup);
 }
 
-
-
 function populateMainpage() {
   const parentElement = document.getElementById('parentElementId');
 
@@ -197,28 +194,3 @@ function populateMainpage() {
 }
 
 document.addEventListener('DOMContentLoaded', populateMainpage);
-
-// function validation(event) {
-//   const mail = document.getElementById('e-mail').value;
-//   const form = document.getElementById('contact-me-form');
-//   let email = mail;
-//   email.toString();
-
-//   email = email.replace('@', '');
-//   email = email.replace(/\./g, '');
-
-//   console.log(email);
-
-//   let str = email;
-//   str = str.toUpperCase();
-//   console.log(str);
-//   if (str === email) {
-//     alert('cannot submit the form , the email has upper case letters');
-//     document.getElementById('error-message').style.display = 'block';
-//     form.addEventListener('submit', (e) => {
-//       e.preventDefault();
-//     });
-//   } else {
-//     alert('can submit');
-//   }
-// }
