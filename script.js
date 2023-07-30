@@ -85,7 +85,7 @@ function Popup(name, descr, image, technology, l1, l2) {
   const divClose = document.createElement('div');
   divClose.classList.add('div_close');
 
-  const child1 = document.createElement('h1');
+  const child1 = document.createElement('h2');
   child1.classList.add('tonic');
   child1.textContent = name;
   divClose.appendChild(child1);
@@ -96,6 +96,28 @@ function Popup(name, descr, image, technology, l1, l2) {
   divClose.appendChild(close);
 
   container.appendChild(divClose);
+
+  const tags = document.createElement('ul');
+  tags.classList.add('tags');
+  for (let x = 0; x < 3; x += 1) {
+    const childTag = document.createElement('li');
+    if (x === 0) {
+      childTag.textContent = 'CANOPY';
+      childTag.classList.add('tags-li-blod');
+      tags.appendChild(childTag);
+    }
+    if (x === 1) {
+      childTag.textContent = 'Back End Dev';
+      childTag.classList.add('tags-li');
+      tags.appendChild(childTag);
+    }
+    if (x === 2) {
+      childTag.textContent = '2023';
+      childTag.classList.add('tags-li');
+      tags.appendChild(childTag);
+    }
+  }
+  container.appendChild(tags);
 
   const childImg = document.createElement('img');
 
@@ -171,7 +193,7 @@ function populateMainpage() {
     const childImg = document.createElement('img');
     childImg.src = arrMobile[x].image;
     parent.appendChild(childImg);
-   ////////<div class=infoDiv> infoDiv opens///////////////////////////
+    /// /////<div class=infoDiv> infoDiv opens///////////////////////////
     const infoDiv = document.createElement('div');
     infoDiv.classList.add('info');
     parent.appendChild(infoDiv);
@@ -181,8 +203,27 @@ function populateMainpage() {
 
     infoDiv.appendChild(child1);
 
-    
-
+    const tags = document.createElement('ul');
+    tags.classList.add('tags');
+    for (let x = 0; x < 3; x += 1) {
+      const childTag = document.createElement('li');
+      if (x === 0) {
+        childTag.textContent = 'CANOPY';
+        childTag.classList.add('tags-li-blod');
+        tags.appendChild(childTag);
+      }
+      if (x === 1) {
+        childTag.textContent = 'Back End Dev';
+        childTag.classList.add('tags-li');
+        tags.appendChild(childTag);
+      }
+      if (x === 2) {
+        childTag.textContent = '2023';
+        childTag.classList.add('tags-li');
+        tags.appendChild(childTag);
+      }
+    }
+    infoDiv.appendChild(tags);
 
     const childDesc = document.createElement('p');
     childDesc.textContent = arrMobile[x].description;
@@ -207,7 +248,7 @@ function populateMainpage() {
     buttonElement.textContent = ('See Project ');
     infoDiv.appendChild(buttonElement);
 
-    /////////////</div>///////////////////
+    /// //////////</div>///////////////////
     buttonElement.setAttribute('data-index', x);
 
     buttonElement.addEventListener('click', (event) => {
@@ -224,7 +265,6 @@ function populateMainpage() {
 
     parent.appendChild(infoDiv);
     parentElement.appendChild(parent);
-
   }
 }
 
