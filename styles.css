@@ -105,6 +105,38 @@ h1 {
   text-align: left;
 }
 
+#project-popup {
+  border-radius: 16px;
+  width: 34%;
+  display: flexbox;
+  flex-direction: column;
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+}
+
+.infoDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  gap: 10px;
+}
+
+#project-popup .div_close {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 30px;
+}
+
+.div_close > img {
+  height: 25px;
+}
+
 .pg1 {
   height: 9.125rem;
   width: 20.4375rem;
@@ -152,7 +184,6 @@ h1 {
   width: 100%;
   height: 750px;
   display: none;
-  position: absolute;
   position: fixed;
   opacity: 0.8;
   top: 0;
@@ -226,21 +257,6 @@ li {
   margin-left: 90%;
 }
 
-.works {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  margin-top: 1rem;
-  padding: 16px;
-  gap: 12px;
-  width: 327px;
-  height: 552px;
-  background: #fff;
-  border: 1px solid #dfe1e6;
-  border-radius: 8px;
-  margin-bottom: 50px;
-}
-
 .snapshot-desktop {
   display: none;
 }
@@ -258,7 +274,8 @@ li {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172b4d;
+  color: #091e42;
+  margin-left: 0;
 }
 
 .desktop-display {
@@ -277,7 +294,8 @@ li {
   gap: 5px;
   list-style: none;
   background-color: #fff;
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .stack-elem:hover {
@@ -336,7 +354,7 @@ li {
 }
 
 .pg2 {
-  height: 147px;
+  height: 100px;
   width: 303px;
   left: 0;
   top: 47px;
@@ -349,6 +367,7 @@ li {
   color: #344563;
   vertical-align: top;
   background-color: #fff;
+  margin-top: 12px;
 }
 
 .middle-sec {
@@ -390,7 +409,8 @@ li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  gap: 3px;
+  margin-top: 10px;
 }
 
 .tags-li {
@@ -400,7 +420,7 @@ li {
   line-height: 16px;
   color: #7a869a;
   margin-left: 0;
-  margin-right: 0;
+  margin-right: 3px;
 }
 
 .tags-li-blod {
@@ -510,7 +530,6 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 303px;
   padding: 10px;
 }
 
@@ -544,6 +563,16 @@ li .list-item #prg-lang {
   display: flex;
   flex-direction: column;
   margin-top: 0;
+}
+
+#error-message {
+  display: none;
+  color: red;
+  font-weight: 400;
+  position: relative;
+  top: -45px;
+  right: -180px;
+  width: fit-content;
 }
 
 .form-header {
@@ -588,6 +617,20 @@ li .list-item #prg-lang {
   gap: 10px;
 }
 
+.info_mobile {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: hug (300px);
+  height: hug (552px);
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.buttons,
 input,
 textarea {
   width: 327px;
@@ -641,6 +684,26 @@ textarea {
   text-align: center;
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the desired blur intensity */
+  backdrop-filter: blur(8px); /* Adjust the blur radius as needed */
+  pointer-events: none; /* Allows clicks to go through the backdrop to underlying elements */
+  z-index: 99;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: fit-content;
+  gap: 8px;
+}
+
 @media screen and (min-width: 375px) {
   .works-section {
     grid-template-columns: repeat(1, 1fr);
@@ -663,6 +726,8 @@ textarea {
       padding: 289px 260px;
       border-bottom-left-radius: 100px;
     }
+
+    /* nav {} */
 
     .menu-bars img {
       display: none;
@@ -726,20 +791,25 @@ textarea {
       background-color: #fff;
       margin-bottom: 50px;
       border-radius: 8px;
-      display: inline-block;
       display: flex;
       flex-direction: row;
       gap: 20px;
     }
 
-    .info {
+    /* .info {
       width: 100%;
       height: auto;
-      top: 24px;
-      left: 590px;
-      padding: 24px;
+      position:relative
+      left: 50%;
+      /* top: 24px; */
+
+    /* left: 590px; */
+
+    /* padding: 24px;
       gap: 24px;
-    }
+      display: flex;
+      flex-direction: column;
+    } */
 
     .snapshot {
       display: none;
@@ -781,12 +851,13 @@ textarea {
     }
 
     .pg2 {
-      width: 303px;
       font-family: 'Poppins', sans-serif;
       font-size: 16px;
       font-weight: 400;
       text-align: left;
       color: #344563;
+      width: 62%;
+      padding: 20px;
     }
 
     .stack {
@@ -876,9 +947,11 @@ textarea {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      position: relative;
+      top: auto;
     }
 
-    .contact-me-form {
+    #contact-me-form {
       position: relative;
       left: 38%;
     }
@@ -936,6 +1009,68 @@ textarea {
 
     #divider {
       width: 684px;
+    }
+
+    #project-popup {
+      padding: 20px;
+      border-radius: 16px;
+      display: none;
+      width: 60%;
+      height: 100vh;
+      position: fixed;
+      z-index: 9999;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      overflow: auto;
+    }
+
+    .bigContainer {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+
+    .container2 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .div_close {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .div_close > h2 {
+      margin-right: auto;
+    }
+
+    .buttons1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the desired blur intensity */
+      backdrop-filter: blur(8px); /* Adjust the blur radius as needed */
+      pointer-events: none; /* Allows clicks to go through the backdrop to underlying elements */
+      z-index: 99;
+    }
+
+    .infor .btns {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: fit-content;
+      gap: 8px;
     }
   }
 }

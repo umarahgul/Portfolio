@@ -6,24 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900" rel="stylesheet">
 </head>
+
 <body>
     <header>
-            <nav>
-          <a href="#" class="logo ">Gul</a>
-          <img src="images/Union.png" onclick="openNav()" class="menu-bars mobile-display" >
+        <nav>
+            <a href="#" class="logo ">Gul</a>
+            <img src="images/Union.png" onclick="openNav()" class="menu-bars mobile-display" id="opnMenuBtn">
             <ul id="desktop-menu">
-            <li><a href="#jump-to-works-section-desktop">Portfolio</a></li>
-            <li><a href="#About-page-desktop">About</a></li>
-            <li><a href="#jump-to-contacts-desktop">Contact</a></li>
+                <li><a href="#jump-to-works-section-desktop">Portfolio</a></li>
+                <li><a href="#About-page-desktop">About</a></li>
+                <li><a href="#jump-to-contacts-desktop">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section id="top">       
+    <section id="top">
         <h1> I’m Umarah. Glad to see you!
         </h1>
         <p class="pg1">I’m a software developer! I can help you build a product ,
@@ -39,219 +40,124 @@
             <li><a href="https://www.twitter.com"><img src="images/angellist.png" /></a></li>
         </ul>
     </section>
+
+
+
+
     <section id="hamburger-menu" class="mobile-display">
-    <img src="images/Icon.png" id="closebtn" onclick="closeNav()">
-    <ul class="popmenu-list">
-        <li onclick="closeNav()"><a href="#jump-to-works-section">Portfolio</a></li>
-        <li onclick="closeNav()"><a href="#About-page">About</a></li>
-        <li onclick="closeNav()"><a href="#jump-to-contacts">Contact</a></li>
+        <img src="images/Enabled.png" id="closebtn" onclick="closeNav()">
+        <ul class="popmenu-list">
+            <li onclick="closeNav()" class="menu_list"><a href="#jump-to-works-section">Portfolio</a></li>
+            <li onclick="closeNav()" class="menu_list"><a href="#About-page">About</a></li>
+            <li onclick="closeNav()" class="menu_list"><a href="#jump-to-contacts">Contact</a></li>
         </ul>
-    <div class="end"></div>
-    </section>
-    <section class="work-section" id="jump-to-works-section">
-        <div id="jump-to-works-section-desktop"></div>
-        <article class="works">
-             <img src="images/image-works-1-desktop.png" class="snapshot-desktop">             
-           <img src="./images/Snapshoot Portfolio (1).png" class="snapshot "/> 
-            
-            <div class="info">
-            <h3 class="tonic">Tonic</h3>
-    
-            <ul class="tags">
-                <li class="tags-li-blod">CANOPY</li>
-                <li><img src="images/Counter.png" class="tags-li"></li>
-                <li class="tags-li">Back End Dev</li>
-                <li><img src="images/Counter.png"></li>
-                <li class="tags-li">2023</li>
-            </ul>
-    
-            <p class="pg2  mobile-display">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-            <p class="pg2  desktop-display">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-            <ul class="stack">
-                <li class="stack-elem">HTML</li>
-                <li class="stack-elem">CSS</li>
-                <li class="stack-elem">Javascript</li>
-            </ul>
-           <button class="see-project" onclick="Popup()">See project</button>
-            </div>
-    
-        </article>
-        
-
-        <article class="works " id="inverse">
-            <img src="images/image-works-2-desktop.png.png" class="snapshot-desktop">
-            <img src="./images/Snapshoot Portfolio2.png" class="snapshot right"/>
-           <div class="info">
-            <h3 class="tonic">Multi-Post
-                Stories</h3>
-    
-            <ul class="tags">
-                <li class="tags-li-blod mobile-display">CANOPY</li>
-                <li class="tags-li-blod desktop-display">FACEBOOK</li>
-                <li><img src="images/Counter.png"></li>
-                <li class="tags-li mobile-display">Back End Dev</li>
-                <li class="tags-li desktop-display">Full Stack dev</li>
-                <li><img src="images/Counter.png"></li>
-                <li class="tags-li">2023</li>
-            </ul>
-    
-            <p class="pg2 mobile-display" >A daily selection of 
-                privately personalized reads; no accounts or sign-ups 
-                required.</p>
-                <p class="pg2 desktop-display">Experimental content creation feature 
-                    that allows users to add to an existing story over the course of
-                     a day without spamming their friends.</p>
-                   
-                    
-            <ul class="stack">
-                <li class="stack-elem">HTML</li>
-                <li class="stack-elem desktop-display">Ruby on rails</li>
-                <li class="stack-elem">CSS</li>
-                <li class="stack-elem">Javascript</li>
-            </ul>
-           <button class="see-project">See project</button>
-           </div>
-    
-        </article>
-        
-    
-        <article class="works">
-            <img src="images/image-works-3-desktop.png" class="snapshot-desktop">
-            <img src="./images/Snapshoot Portfolio3.png" class="snapshot"/>
-            <div class="info">
-            <h3 class="tonic mobile-display">Tonic</h3>
-            <h3 class="tonic desktop-display">Facebook 360</h3>
-    
-            <ul class="tags">
-                <li class="tags-li-blod mobile-display">CANOPY</li>
-                <li class="tags-li-blod desktop-display">FACEBOOK</li>
-                <li><img src="images/Counter.png"></li>
-                <li class="tags-li mobile-display">Back End Dev</li>
-                <li class="tags-li desktop-display">Full Stack Dev</li>
-                <li><img src="images/Counter.png"></li>
-                <li class="tags-li">2023</li>
-            </ul>
-    
-            <p class="pg2 mobile-display">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-            <p class="pg2 desktop-display">Exploring the future of media in Facebook's first Virtual Reality app; a place to
-                 discover and enjoy 360 photos and videos on Gear VR.</p>
-            <ul class="stack">
-                <li class="stack-elem">HTML</li>
-                <li class="stack-elem desktop-display">Ruby on rails</li>
-                <li class="stack-elem">CSS</li>
-                <li class="stack-elem">Javascript</li>
-            </ul>
-           <button class="see-project">See project</button>
-            </div>
-    
-        </article>
-        
-
-        <article class="works" id="inverse">
-            <img src="images/image-works-4-desktop.png" class="snapshot-desktop">
-            <img src="./images/Snapshoot Portfolio4.png" class="snapshot"/>
-            <div class="info">
-            <h3 class="tonic mobile-display">Tonic</h3>
-            <h3 class="tonic desktop-display">Uber Navigation</h3>
-    
-            <ul class="tags">
-                <li class="tags-li-blod mobile-display">CANOPY</li>
-                <li class="tags-li-blod desktop-display">Uber</li>
-                <li><img src="images/Counter.png"></li>
-                <li class="tags-li mobile-display">Back End Dev</li>
-                <li class="tags-li desktop-display">Lead Developer</li>
-                <li><img src="images/Counter.png"></li>
-                <li class="tags-li">2023</li>
-            </ul>
-    
-            <p class="pg2 mobile-display">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-            <p class="pg2 desktop-display">A smart assistant to make driving more safe, efficient, and fun by unlocking your most 
-                expensive computer: your car.</p>
-            <ul class="stack">
-                <li class="stack-elem">HTML</li>
-                <li class="stack-elem desktop-display">Ruby on rails</li>
-                <li class="stack-elem">CSS</li>
-                <li class="stack-elem">Javascript</li>
-            </ul>
-           <button class="see-project">See project</button>
-            </div>
-    
-        </article>
-        
+        <div class="end"></div>
     </section>
 
+
+    <div id="parentElementId"></div>
+
+   
+    <div id="project-popup"></div>
+    <div class="backdrop" id="backdrop"></div>
 
     <section class="About-myself" id="About-page">
         <div id="About-page-desktop"></div>
         <div class="left">
-        <h2 id="myself">About Myself</h2>
-        <p class="pg2">Hello I’m a software developer! I can help you build a product ,
-            feature or website. Look through some of my work and experience!
-            If you like what you see and have a project you need coded, don’t
-            hesitate to contact me.</p>
+            <h2 id="myself">About Myself</h2>
+            <p class="pg2">Hello I’m a software developer! I can help you build a product ,
+                feature or website. Look through some of my work and experience!
+                If you like what you see and have a project you need coded, don’t
+                hesitate to contact me.</p>
             <div class="middle-sec">
-        <h2 class=" connect">LET'S CONNECT</h2>
-        <ul class="footer">
-            <li><a href="#"><img src="images/twitter.png" /></a></li>
-            <li><a href="#"><img src="images/github.png" /></a></li>
-            <li><a href="#"><img src="images/Linkedin icon.png" /></a></li>
-            <li><a href="#"><img src="images/medium.png" /></a></li>
-            <li><a href="#"><img src="images/angellist.png" /></a></li>
-        </ul>
-        <button class="see-project resume">get my resume</button> 
-      </div class="middle-sec">
-       </div>
-        
-        <div class="right">
-        <ul class="skills">  
-            <li class="dropdown">
-              <a href="#" class="dropdown-btn"><div class="container"><div>Languages</div><img src="images/arrow.png" class="rotate"></div></a>
-
-              <div class="dropdown-content">
-                <ul class="bg-drp">
-                <li ><a href="#" class="list-item"><img src="images/Ellipse for JS.png"><div id="prg-lang">Javascript</div></a></li>
-                <li><a href="#" class="list-item"><img  src="images/htm.png"><div id="prg-lang">HTML</div></a></li>
-                <li><a href="#" class="list-item"><img  src="images/cs.png"><div id="prg-lang">CSS</div></a></li>
+                <h2 class=" connect">LET'S CONNECT</h2>
+                <ul class="footer">
+                    <li><a href="#"><img src="images/twitter.png" /></a></li>
+                    <li><a href="#"><img src="images/github.png" /></a></li>
+                    <li><a href="#"><img src="images/Linkedin icon.png" /></a></li>
+                    <li><a href="#"><img src="images/medium.png" /></a></li>
+                    <li><a href="#"><img src="images/angellist.png" /></a></li>
                 </ul>
-              </div>
-            </li>
-            <div id="divider"></div>
-            <li>
-                <a href="#" class="dropdown-btn"><div>Frameworks</div><img src="images/arrow.png"></a>
+                <button class="see-project resume">get my resume</button>
+            </div class="middle-sec">
+        </div>
+
+        <div class="right">
+            <ul class="skills">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-btn">
+                        <div class="container">
+                            <div>Languages</div><img src="images/arrow.png" class="rotate">
+                        </div>
+                    </a>
+
+                    <div class="dropdown-content">
+                        <ul class="bg-drp">
+                            <li><a href="#" class="list-item"><img src="images/Ellipse for JS.png">
+                                    <div id="prg-lang">Javascript</div>
+                                </a></li>
+                            <li><a href="#" class="list-item"><img src="images/htm.png">
+                                    <div id="prg-lang">HTML</div>
+                                </a></li>
+                            <li><a href="#" class="list-item"><img src="images/cs.png">
+                                    <div id="prg-lang">CSS</div>
+                                </a></li>
+                        </ul>
+                    </div>
                 </li>
-            <div id="divider"></div>
-            <li>
-                <a href="#" class="dropdown-btn"><div>Skills</div><img src="images/arrow.png"></a>
-            </li>
-          </ul>
+                <div id="divider"></div>
+                <li>
+                    <a href="#" class="dropdown-btn">
+                        <div>Frameworks</div><img src="images/arrow.png">
+                    </a>
+                </li>
+                <div id="divider"></div>
+                <li>
+                    <a href="#" class="dropdown-btn">
+                        <div>Skills</div><img src="images/arrow.png">
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
     <section class="contact-me" id="jump-to-contacts">
         <div id="jump-to-contacts-desktop"></div>
-    
+
         <div class="form-header">
-        <h2 class="form-heading"> Contact me </h2>
- 
-        <p class="pg-contact">If you have an application you are interested in developing, a feature that you
-          need built or a project that needs coding. 
-         I’d love to help with it!
-         </p>
-         </div>
-         <form action="https://formspree.io/f/mqkvkgdo" method="POST" class="contact-me-form">
-         <ul class="form-info">
-         <li>     
-             <input type="text" id="name" name="name" required placeholder="Lorem Ipsum" maxlength="30"/></li>
-         <li>
-                 <input type="email" id="e-mail" name="email" required placeholder="loremipsum@gmail.com"/> </li>
-          <li>
-                 <textarea id="message" maxlength="500" name="message" required placeholder="Write message here..."></textarea> </li>
-        <li>
-            <button class="button-form see-project " type="submit">
-                Get in touch
-              </button> </li>
-                 </ul>
-         </form>
-         <div class="end"></div>
- </section>
+            <h2 class="form-heading"> Contact me </h2>
+
+            <p class="pg-contact">If you have an application you are interested in developing, a feature that you
+                need built or a project that needs coding.
+                I’d love to help with it!
+            </p>
+        </div>
+        <form action="https://formspree.io/f/mqkvkgdo" method="POST" id="contact-me-form" onsubmit=false>
+            <ul class="form-info">
+                <li>
+                    <input type="text" id="name" name="name" required placeholder="Lorem Ipsum" maxlength="30" />
+                </li>
+                <li>
+                    <input type="email" id="e-mail" name="email" required placeholder="loremipsum@gmail.com" />
+                </li>
+                <li>
+                    <textarea id="message" maxlength="500" name="message" required
+                        placeholder="Write message here..."></textarea>
+                </li>
+                <li>
+
+
+                    <button class="button-form see-project " type="submit" onclick="validation()">
+                        Get in touch
+                    </button><span id="error-message"> * Invalid email address</span>
+                </li>
+            </ul>
+        </form>
+        <div class="end"></div>
+    </section>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
