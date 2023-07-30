@@ -107,13 +107,15 @@ h1 {
 
 #project-popup {
   border-radius: 16px;
-  display: none;
   width: 34%;
+  display: flexbox;
+  flex-direction: column;
   position: fixed;
   z-index: 100;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow: auto;
 }
 
 .infoDiv {
